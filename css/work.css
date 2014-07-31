@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* CSS Document for work page */
+body {
+	background-color:#221A26!important; 
+}
+.zerogrid {
+	background-color:#221A26!important;
+}
+.zerogrid .row {
+	background-color:#221A26!important;
+}
+.zerogrid .nav {
+	border-bottom: 0px !important;
+}
+.viewmore-btn {
+	background-color:transparent;
+	-webkit-border-top-left-radius:4px;
+	-moz-border-radius-topleft:4px;
+	border-top-left-radius:4px;
+	-webkit-border-top-right-radius:4px;
+	-moz-border-radius-topright:4px;
+	border-top-right-radius:4px;
+	-webkit-border-bottom-right-radius:4px;
+	-moz-border-radius-bottomright:4px;
+	border-bottom-right-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-bottomleft:4px;
+	border-bottom-left-radius:4px;
+	text-indent:0px;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	color:#ffffff;
+	font-family:source;
+	font-size:21px;
+	font-weight:normal;
+	font-style:normal;
+	height:59px;
+	line-height:59px;
+	width:179px;
+	text-decoration:none;
+	text-align:center;
+	margin-bottom: 50px;
+}
+.viewmore-btn:hover {
+	background-color:#F75423;
+	transition: background-color 0.25s ease-in-out;
+}
+.viewmore-btn:active {
+	position:relative;
+	top:1px;
+}
+.viewmore-btn-wrapper {
+	margin: 0 auto; 
+	text-align: center;
+}
+.titlehere {
+	font-family: texgyre;
+	line-height: 75px;
+	text-align:center;
+	font-size:30px;
+	margin-top: 90px;
+	color: #fff; 
+}
+.desc {
+	font-size:18px;
+	font-style:italic;
+	text-align:center;
+	margin-bottom: 75px;
+	font-family:texgyre;
+	color:#FFFFFF;
+}
+.desc2 {
+	font-size:18px;
+	text-align:left;
+	margin-top: 50px;
+	font-family:texgyre;
+	margin-bottom: 100px;
+	margin-left: 10%;
+	color:#323232;
+	margin-right: 30%;
+}
+.desc3 {
+	font-size:16px;
+	text-align:left;
+	font-family:texgyre;
+	margin-bottom: 60px;
+	margin-left: 20%;
+    margin-right: 19%;
+	color:#323232;
+}
+.zerogrid-full .orangetext-work {
+	margin: 0px 70% 10px 20%;
+	line-height: 40px;
+	float:left;
+}
+.zerogrid-full .title{
+	float:left;
+	text-align:left;
+	color: #4A4A4A;
+	font-family:texgyre;
+	font-size: 36px;
+	margin-top: 50px;
+	margin-left:60%;
+	border-top: 5px solid #F75423;
+}
+.zerogrid-full #work-logo1 {
+	background-image:url(../img/unity_btn.png);
+	transition: background-image 0.25s ease-in-out;
+	background-size:cover;
+}
+.zerogrid-full #work-logo2 {
+	background-image:url(../img/teamboard_btn.png);
+	transition: background-image 0.25s ease-in-out;
+	background-size:cover;
+}
+.zerogrid-full #work-logo3 {
+	background-image:url(../img/toolbar_btn.png);
+	transition: background-image 0.25s ease-in-out;
+	background-size:cover;
+}
+.zerogrid-full #work-logo1:hover {
+	background-image:url(../img/unity_btn_orange.png);
+}
+.zerogrid-full #work-logo2:hover {
+	background-image:url(../img/teamboard_btn_orange.png);
+}
+.zerogrid-full #work-logo3:hover {
+	background-image:url(../img/toolbar_btn_orange.png)
+}
+.zerogrid-full #work-logo6 {
+	background-image:url(../img/unity_btn.png);
+	transition: background-image 0.25s ease-in-out;
+	background-size:cover;
+}
+.zerogrid-full #work-logo4 {
+	background-image:url(../img/teamboard_btn.png);
+	transition: background-image 0.25s ease-in-out;
+	background-size:cover;
+}
+.zerogrid-full #work-logo5 {
+	background-image:url(../img/toolbar_btn.png);
+	transition: background-image 0.25s ease-in-out;
+	background-size:cover;
+}
+.zerogrid-full #work-logo6:hover {
+	background-image:url(../img/unity_btn_orange.png);
+}
+.zerogrid-full #work-logo4:hover {
+	background-image:url(../img/teamboard_btn_orange.png);
+}
+.zerogrid-full #work-logo5:hover {
+	background-image:url(../img/toolbar_btn_orange.png)
+}
+.zerogrid-full #toolbar {
+	background-image:url(../img/toolbar_btn.png);
+	height: 440px;
+	background-size:cover;
+}
+.zerogrid-full #teamboard {
+	background-image:url(../img/teamboard_picture_low.png);
+	height: 450px;
+	background-size:cover;
+}
+.zerogrid-full #teamboard-pic {
+	background-image:url(../img/home_page.jpg);
+	background-size:cover;
+	height: 200px;
+}
+.zerogrid-full #teamboard-pic2 {
+	background-image:url(../img/teamboard_btn.png);
+	background-size:cover;
+	height: 200px;
+}
+.zerogrid-full #teamboard-pic3 {
+	background-image:url(../img/teamboard_btn.png);
+	background-size:cover;
+	height: 200px;
+}
+.zerogrid-full #teamboard-pic4 {
+	background-image:url(../img/teamboard_picture.jpg);
+	background-size:cover;
+	height: 200px;
+}
+.zerogrid-full #teamboard-pic:hover {
+	background-image:url(../img/teamboard_btn_orange.png);
+	transition: background-image 0.25s ease-in-out;
+}
+.zerogrid-full #teamboard-pic2:hover {
+	background-image:url(../img/toolbar_btn_orange.png);
+	transition: background-image 0.25s ease-in-out;
+}
+.zerogrid-full #teamboard-pic3:hover {
+	background-image:url(../img/teamboard_btn_orange.png);
+	transition: background-image 0.25s ease-in-out;
+}
+.zerogrid-full #teamboard-pic4:hover {
+	background-image:url(../img/unity_btn_orange.png);
+	transition: background-image 0.25s ease-in-out;
+}
+#teamboard-pic:hover .logoshere, #teamboard-pic2:hover .logoshere, #teamboard-pic3:hover .logoshere, #teamboard-pic4:hover .logoshere {
+	visibility: visible;
+    opacity: 1;
+}
+.zerogrid-full #unity {
+	background-image:url(../img/unity_mockup_logo_low.jpg);
+	height:450px;
+	background-color: #000;
+	opacity: 0.9;
+	background-size:cover;
+}
+.zerogrid-full .col-1-2 {
+	background-color:transparent !important;
+}
+.zerogrid-full .col-1-3-1, .zerogrid-full .col-1-3 {
+  width:33.33%;
+}
+.zerogrid-full h2 {
+	font-family:texgyre;
+	font-size:36px;
+	margin: 100px 20% 50px 40%;
+	color:#fff;
+	line-height: 50px;
+}
+.zerogrid-full .col-1-2 img {
+	height: 50px;
+	margin-left: 40%;
+}
+.zerogrid-full .col-full {
+	background-color:#FFFFFF;
+}
+
+.try-btn {
+	background-color:#fff;
+	-webkit-border-top-left-radius:4px;
+	-moz-border-radius-topleft:4px;
+	border-top-left-radius:4px;
+	-webkit-border-top-right-radius:4px;
+	-moz-border-radius-topright:4px;
+	border-top-right-radius:4px;
+	-webkit-border-bottom-right-radius:4px;
+	-moz-border-radius-bottomright:4px;
+	border-bottom-right-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-bottomleft:4px;
+	border-bottom-left-radius:4px;
+	text-indent:0;
+	border:2px solid #f75423;
+	display:inline-block;
+	color:#f75423;
+	font-family:Times New Roman;
+	font-size:20px;
+	font-weight:normal;
+	font-style:normal;
+	height:36px;
+	line-height:36px;
+	width:148px;
+	text-decoration:none;
+	text-align:center;
+	margin-bottom: 60px;
+	cursor:pointer;
+}.try-btn:active {
+	position:relative;
+
+	top:1px;
+}
+.try-btn:hover {
+	cursor:pointer;
+		background-color: #F75432;
+	color: #fff;
+}
+

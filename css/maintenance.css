@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image:url(../img/n4sjamk_background_pic.png);
+	background-attachment:fixed;
+	width:100%;
+}
+.container {
+	border-radius: 8px;
+	width:80%;
+	border:  2px solid #FFF;
+	box-sizing:border-box;
+	margin: 100px auto;
+}
+.wrapper {
+	margin: 0 auto;
+	text-align:center;
+}
+.heading1 {
+	color:#FFFFFF;
+	font-size:50px;
+	text-align:center;
+	font-family: texgyre;
+}
+.phrase1 {
+	color:#FFFFFF;
+	font-size:28px;
+	text-align:center;
+	font-family:source;
+}
+@font-face {
+	font-family:source;
+	src:url(../fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+	font-family:texgyre;
+	src:url(../fonts/texgyreschola-regular.otf);
+}
