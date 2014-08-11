@@ -8,12 +8,12 @@ body {
 .container {
 	border-radius: 8px;
 	width:80%;
-	border:  2px solid #FFF;
 	box-sizing:border-box;
 	margin: 100px auto;
 }
 .wrapper {
-	margin: 0 auto;
+	margin: 60px auto;
+	margin-left: -60px;
 	text-align:center;
 }
 .heading1 {
