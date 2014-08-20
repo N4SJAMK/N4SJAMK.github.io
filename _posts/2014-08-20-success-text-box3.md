@@ -1,0 +1,6 @@
+---
+title: Lorem
+tag: success-text-box
+---
+
+Vivamus dapibus orci et risus semper faucibus. Proin molestie ultricies pulvinar. Suspendisse potenti. Cras porta felis a leo eleifend rhoncus.
