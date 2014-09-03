@@ -179,6 +179,7 @@ body {
 	font-size:36px !important;
 	line-height: 40px!important;
 	padding-top: 75px !important;
+	margin-bottom: 20px;
 }
 .zerogrid .col-full-example1 {
 	height: 650px !important;
@@ -414,7 +415,9 @@ height: 320px !important;
 	line-height: 38px !important;
 	font-size: 28px !important;
 	padding-top: 60px !important;
+	padding-bottom: 60px !important;
 }
+
 
 .zerogrid .text-agile {
 	font-size: 38px !important;
@@ -538,7 +541,7 @@ body {
 .zerogrid .col-full-example1 {
 	/*background-image:url(../img/bg_low.jpg);*/
 	background-repeat:repeat-x;
-	height: 1000px;
+	/* height: 1000px; */
 	clear: both;
 }
 .zerogrid .col-full-example2 {
@@ -596,10 +599,9 @@ body {
 	line-height: 68px;
 	color: #fff;
 	font-size: 58px;
-	padding-left: 50px;
-	padding-right: 60px;
 	font-family:texgyre;
-	padding-top: 120px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 .zerogrid .text-agile {
 	line-height: 65px;
