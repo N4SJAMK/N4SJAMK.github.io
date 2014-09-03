@@ -1,4 +1,4 @@
-  ---
+---
 title: index page
 ---
 
@@ -52,8 +52,8 @@ title: index page
   <div  class="row">
     <div class="col-1-2" id="picheight">
         {% for post in site.tags.we-are limit:1 %}
-              <p class="orangetext"> {{ post.title }} </p>
-              <p class="context"> {{ post.content | remove: '<p>' | remove: '</p>' }} </p>
+          <p class="orangetext"> {{ post.title }} </p>
+          <p class="context"> {{ post.content | remove: '<p>' | remove: '</p>' }} </p>
         {% endfor %}
       <div class="n4sbutton-wrapper" ><a href="http://www.n4s.fi/en/" target="_blank" class="n4sbutton smoothScroll">More about N4S</a></div>
       </div>
