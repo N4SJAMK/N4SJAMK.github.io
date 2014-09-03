@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	background-color: darkgray;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	height: 800px;
+}
+
+.logo {
+	height: 100%;
+	width: 100%;
+	min-height: 50px;
+	min-width: 50px;
+	max-height: 150px;
+	max-width: 150px;
+	margin: 20px 0px 20px 0px;
+	display: inline-block;
+}
+
+.transparent {
+	background: transparent;
+}
+
+.nav {
+	background-color: darkgray;
+}
+
+.nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+	text-align: right;
+	display: inline-block;
+}
+
+.nav ul li {
+	display: inline-block;
+}
+.nav ul li:hover {
+	border-radius: 5px 5px 0px 0px;
+}
+#logo-li {
+	text-align: left;
+	display: inline-block;
+}
+
+.nav ul li a {
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #CCCCCC;
+	font-family: webly;
+	font-weight: lighter;
+	font-size: 12px;
+}
+.nav ul li a:hover {
+	color: #F75423;
+	font-weight:200;
+}
+.arrow {
+	color: white;
+}
