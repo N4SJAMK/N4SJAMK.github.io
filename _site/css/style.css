@@ -16,8 +16,8 @@ html, body {
 	max-height: 100px;
 	max-width: 100px;
 	display: inline-block;
-	margin-left: 25px;
 	margin-top: 15px;
+	float: left;
 }
 
 .transparent {
@@ -25,34 +25,21 @@ html, body {
 }
 
 .nav {
-	background-color: transparent;
+	background-color: #221a26;
 	height: 80px;
 	position: fixed;
-	left: 0;
-	top: 0;
 	width: 100%;
+	z-index: 5;
+	padding-bottom: 0;
 }
-.fixednav {
-	background-color: #281d25;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	z-index: 100;
-}
-.nav-wrapper {
-	width: 960px;
-	margin: 0 auto;
-}
-
 .nav ul {
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
 	font-weight: bold;
 	display: inline-block;
-	position: relative;
-	right: -200px;
+	float: right;
+	margin-top: 25px;
 }
 
 .nav ul li {
@@ -84,10 +71,13 @@ html, body {
 	padding-top: 200px;
 	height: 500px;
 }
-.text {
+.big-text {
 	color: white;
-	font-size: 36px;
+	font-size: 48px;
 }
 .arrow {
 	color: white;
+	position: absolute;
+	bottom: 40px;
+	left: calc(50% - 20px);
 }
