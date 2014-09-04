@@ -1,29 +1,23 @@
 html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
 	background: url('../img/n4sjamk_background_pic.jpg');
+	background-position: center;
 	margin: 0;
 	padding: 0;
-}
-
-#wrapper {
-	/* background: url('../img/n4sjamk_background_pic.jpg');
-	background-size: 100%;
-	background-position: center; */
-	margin: 0;
-	padding: 0;
-}
-
-.header {
-	height: 800px;
 }
 
 .logo {
-	height: 50%;
-	width: 50%;
 	min-height: 50px;
 	min-width: 50px;
-	max-height: 150px;
-	max-width: 150px;
+	max-height: 100px;
+	max-width: 100px;
 	display: inline-block;
+	margin-left: 25px;
+	margin-top: 15px;
 }
 
 .transparent {
@@ -32,17 +26,23 @@ html, body {
 
 .nav {
 	background-color: transparent;
+	height: 80px;
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 }
 .fixednav {
-	background-color: lightblue;
+	background-color: #281d25;
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
+	z-index: 100;
+}
+.nav-wrapper {
+	width: 960px;
+	margin: 0 auto;
 }
 
 .nav ul {
@@ -50,8 +50,9 @@ html, body {
 	padding: 0px;
 	margin: 0px;
 	font-weight: bold;
-	text-align: right;
 	display: inline-block;
+	position: relative;
+	right: -200px;
 }
 
 .nav ul li {
@@ -72,6 +73,7 @@ html, body {
 	font-family: webly;
 	font-weight: lighter;
 	font-size: 12px;
+	z-index: 050;
 }
 .nav ul li a:hover {
 	color: #F75423;
@@ -80,7 +82,11 @@ html, body {
 
 .top {
 	padding-top: 200px;
-	height: 800px;
+	height: 500px;
+}
+.text {
+	color: white;
+	font-size: 36px;
 }
 .arrow {
 	color: white;
