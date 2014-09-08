@@ -10,6 +10,23 @@ html, body {
 	padding: 0;
 }
 
+.link-button {
+	padding: 8px 20px;
+	border: 3px solid #221a26;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background-color: white;
+	font-family: Arial;
+	text-decoration: none;
+	color: #221a26;
+	font-size: 14px;
+	font-weight: bold;
+}	
+
+
+/* HEADER */
+
 .logo {
 	min-height: 50px;
 	min-width: 50px;
@@ -84,12 +101,106 @@ html, body {
 	left: calc(50% - 20px);
 }
 
-/* More about N4S */
+/* PROJECT */
+
+.project-area {
+	background-color: white;
+	width: calc(auto - 20px);
+	height: auto;
+	padding: 20px;
+}
+.whitebg {
+	background-color: white;
+}
+.project-area {
+	width: auto;
+	height: auto;
+	padding: 20px;
+}
 
 .orangetext {
 	color: orange;
+	font-size: 36px;
+	margin: 0;
 }
 
 .context {
 	font-family: source;
+	margin: 0;
+	margin-bottom: 30px;
+
+}
+
+.projectwrapper {
+	background-color: #221a26;
+	height: auto;
+}
+
+
+/* AGILE BY NATURE */
+
+.text-agile {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: white;
+	font-size: 56px;
+}
+
+/* FACE GRID, NOT USED ATM
+
+.pics {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: 25%;
+	height: 200px;
+}
+
+#photo1 {
+	background: url('../img/face1.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+ }
+#photo2 {
+	background: url('../img/face2.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#photo3 {
+	background: url('../img/face3.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#photo4 { 
+	background: url('../img/face4.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.logoshere {
+	text-align: center;
+	line-height: 32px;
+	color: #fff;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: texgyre;
+	visibility: hidden;
+}
+.logoshere:hover {
+	visibility: visible;
+	background-color: orange;
+} */
+
+/* TEAM */
+
+.success-title {
+	color: orange;
+}
+.success-text {
+	
 }
