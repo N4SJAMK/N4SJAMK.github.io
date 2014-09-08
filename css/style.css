@@ -67,6 +67,8 @@ html, body {
 	font-weight:200;
 }
 
+/* First part of the page */
+
 .top {
 	padding-top: 200px;
 	height: 500px;
@@ -80,4 +82,14 @@ html, body {
 	position: absolute;
 	bottom: 40px;
 	left: calc(50% - 20px);
+}
+
+/* More about N4S */
+
+.orangetext {
+	color: orange;
+}
+
+.context {
+	font-family: source;
 }
