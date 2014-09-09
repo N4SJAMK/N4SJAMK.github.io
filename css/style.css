@@ -24,7 +24,6 @@ html, body {
 	font-weight: bold;
 }	
 
-
 /* HEADER */
 
 .logo {
@@ -103,6 +102,9 @@ html, body {
 
 /* PROJECT */
 
+.project {
+	padding: auto 30px;
+}
 .project-area {
 	background-color: white;
 	width: calc(auto - 20px);
@@ -135,7 +137,6 @@ html, body {
 	background-color: white;
 	height: auto;
 }
-
 
 /* AGILE BY NATURE */
 
@@ -182,8 +183,8 @@ html, body {
 }
 
 .logoshere {
-	text-align: center
-;	line-height: 32px;
+	text-align: center;
+	line-height: 32px;
 	color: #fff;
 	font-size: 20px;
 	margin-left: 10px;
@@ -239,4 +240,30 @@ html, body {
 	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+/* CONTACT */
+
+.contact h3 {
+	font-size: 15px;
+	line-height: 12px;
+}
+.contact p {
+	line-height: 10px;
+	font-size: 12px;
+}
+.contact i {
+	padding-right: 5px;
+}
+.contact a {
+	color: black;
+}
+
+
+/* FOOTER */
+
+.footer {
+	padding-top: 8px;
+	text-align: center;
+	color: white;
 }
