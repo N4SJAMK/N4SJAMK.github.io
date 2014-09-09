@@ -145,6 +145,9 @@ html, body {
 	margin-bottom: 40px;
 	color: white;
 	font-size: 56px;
+	border-top: 5px solid orange;
+	padding-top: 15px;
+	width: 236px;
 }
 
 /* FACE GRID */
@@ -200,22 +203,32 @@ html, body {
 /* TEAM */
 
 .success-title {
-	font-size: 22px;
+	font-size: 48px;
+	border-top: 5px solid orange;
+	padding-top: 15px;
+	width: 270px;
 }
 .success-text {
-	
+	padding-top: 70px;
 }
-.orange-heading {
-	color: orange;
-	font-size: 22px;
-}
+
 .textareas {
 	width: auto;
 	padding-right: 20px;
 }
+.textareas h2 {
+	padding-top: 0;
+	margin-top: 0;
+	color: orange;
+	font-size: 24px;
+}
+.textareas p {
+	font-size: 16px;
+	font-style: normal;
+	color: black;
+}
 .text-area-wrapper {
-	padding-top: 20px;
-	padding border-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 /* OUR PARTNERS */
@@ -225,6 +238,9 @@ html, body {
 	margin-bottom: 40px;
 	color: white;
 	font-size: 56px;
+	border-top: 5px solid orange;
+	padding-top: 15px;
+	width: 250px;
 }
 
 .company-logos {
@@ -236,10 +252,11 @@ html, body {
 
 .vision {
 	text-align: center;
+	line-height: 28px;
 	font-size: 18px;
 	color: white;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 /* CONTACT */
