@@ -103,13 +103,16 @@ html, body {
 /* PROJECT */
 
 .project {
-	padding: auto 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .project-area {
 	background-color: white;
-	width: calc(auto - 20px);
+	width: auto;
 	height: auto;
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 0;
 }
 .whitebg {
 	background-color: white;
@@ -124,15 +127,13 @@ html, body {
 	color: orange;
 	font-size: 36px;
 	margin: 0;
+	padding-right: 30px;
 }
 
 .context {
 	font-family: source;
-	margin: 0;
-	margin-bottom: 30px;
-
+	padding-bottom: 30px;
 }
-
 .projectwrapper {
 	background-color: white;
 	height: auto;
@@ -141,7 +142,7 @@ html, body {
 /* AGILE BY NATURE */
 
 .text-agile {
-	margin-top: 40px;
+	margin-top: 50px;
 	margin-bottom: 40px;
 	color: white;
 	font-size: 56px;
@@ -202,6 +203,9 @@ html, body {
 
 /* TEAM */
 
+.success-wrapper {
+	padding-bottom: 30px;
+}
 .success-title {
 	font-size: 48px;
 	border-top: 5px solid orange;
@@ -214,7 +218,6 @@ html, body {
 
 .textareas {
 	width: auto;
-	padding-right: 20px;
 }
 .textareas h2 {
 	padding-top: 0;
@@ -226,6 +229,7 @@ html, body {
 	font-size: 16px;
 	font-style: normal;
 	color: black;
+	padding-right: 30px;
 }
 .text-area-wrapper {
 	padding-bottom: 20px;
@@ -234,7 +238,7 @@ html, body {
 /* OUR PARTNERS */
 
 .text-partners {
-	margin-top: 40px;
+	margin-top: 50px;
 	margin-bottom: 40px;
 	color: white;
 	font-size: 56px;
