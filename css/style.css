@@ -132,7 +132,7 @@ html, body {
 }
 
 .projectwrapper {
-	background-color: #221a26;
+	background-color: white;
 	height: auto;
 }
 
@@ -199,8 +199,20 @@ html, body {
 /* TEAM */
 
 .success-title {
-	color: orange;
+	font-size: 22px;
 }
 .success-text {
 	
+}
+.orange-heading {
+	color: orange;
+	font-size: 22px;
+}
+.textareas {
+	width: auto;
+	padding-right: 20px;
+}
+.text-area-wrapper {
+	padding-top: 20px;
+	padding border-bottom: 20px;
 }
