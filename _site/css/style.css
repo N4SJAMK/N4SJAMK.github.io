@@ -40,7 +40,9 @@ html, body {
 .transparent {
 	background: transparent;
 }
-
+.collapse {
+	color: transparent;
+}
 .nav {
 	background-color: #221a26;
 	height: 80px;
@@ -295,7 +297,13 @@ html, body {
 /* MEDIA QUERIES */
 
 @media (max-width: 640px) {
-
+	.collapse-button {
+		font-size: 40px;
+		margin-top: 32px;
+	}
+	.collapse {
+		color: white;
+	}
 	.nav {
 		background-color: #221a26;
 		height: 80px;
