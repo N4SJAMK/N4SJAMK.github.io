@@ -52,26 +52,32 @@ title: index page
 
 <div class="zerogrid row project" id="project">
   <div class="col-1-2" id="picheight">
+    <div class="wrap-col">
 
     {% for post in site.tags.we-are limit:1 %}
       <p class="orangetext"> {{ post.title }} </p>
     {% endfor %}
-
+    
+    </div>
   </div>
   <div class="col-1-2">
+    <div class="wrap-col">
 
     {% for post in site.tags.we-are limit:1 %}
       <p class="context"> {{ post.content | remove: '<p>' | remove: '</p>' }} </p>
       <a  class="link-button" href="#">Press this</a>
     {% endfor %}
 
+    </div>
   </div>
 </div>
 
 <div class="wrapper">
   <div class="zerogrid row">
     <div class="col-1-3" id="team">
-      <p class="text-agile">Agile by nature</p>
+      <div class="wrap-col">
+        <p class="text-agile">Agile by nature</p>
+      </div>
     </div>
   </div>
 </div>
@@ -85,12 +91,16 @@ title: index page
       <div id="our">
         {% for post in site.tags.success-text limit:1 %}
         <div class="col-1-3">
-          <p class="success-title">{{ post.title | remove: '<p>' | remove: '</p>' }}</p>
+          <div class="wrap-col">
+            <p class="success-title">{{ post.title | remove: '<p>' | remove: '</p>' }}</p>
+          </div>
         </div>
 
-        <div class="col-2-3"> 
-          <p class="success-text"> {{ post.content | remove: '<p>' | remove: '</p>' }} </p>
-          {% endfor %}
+        <div class="col-2-3">
+          <div class="wrap-col">
+            <p class="success-text"> {{ post.content | remove: '<p>' | remove: '</p>' }} </p>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>
@@ -99,7 +109,7 @@ title: index page
   <div class="zerogrid row text-area-wrapper">
     {% for post in site.tags.success-text-box %}
     <div class="col-1-3">
-      <div class="col-wrap textareas">
+      <div class="wrap-col textareas">
         <h2> {{ post.title | remove: '<p>' | remove: '</h2>' }} </h2>
         <p> {{ post.content | remove: '<p>' | remove: '</p>' }} </p>
       </div>
@@ -109,7 +119,9 @@ title: index page
 
   <div class="zerogrid row text-area-wrapper">
     <div class="col-1-3">
-      <a href="work.html" class="link-button">Our Works</a>
+      <div class="wrap-col">
+        <a href="work.html" class="link-button">Our Works</a>
+      </div>
     </div>
   </div>
 </div>
@@ -117,23 +129,31 @@ title: index page
 <div class="wrapper">
   <div class="zerogrid row">
     <div class="col-1-3" id="partners">
-      <p class="text-partners">Our partners</p>
+      <div class="wrap-col">
+        <p class="text-partners">Our partners</p>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="zerogrid row" id="black">
   <div class="col-1-3" id="logo1">
-    <img src="../img/company-logo.jpg" alt="logo1" class="company-logos" />
-    <p>Suspendisse sit amet enim semper, placerat leo vestibulum, suscipit ipsum. Cras eleifend, ligula commodo sodales eleifend, est ipsum viverra era. </p>
+    <div class="wrap-col">
+      <img src="../img/company-logo.jpg" alt="logo1" class="company-logos" />
+      <p>Suspendisse sit amet enim semper, placerat leo vestibulum, suscipit ipsum. Cras eleifend, ligula commodo sodales eleifend, est ipsum viverra era. </p>
+    </div>
   </div>
   <div class="col-1-3" id="logo2">
-    <img src="../img/company-logo.jpg" alt="logo1" class="company-logos" />
-    <p>Proin molestie ultricies pulvinar. Suspendisse potenti.</p>
+    <div class="wrap-col">
+      <img src="../img/company-logo.jpg" alt="logo1" class="company-logos" />
+      <p>Proin molestie ultricies pulvinar. Suspendisse potenti.</p>
+    </div>
   </div>
   <div class="col-1-3" id="logo3">
-    <img src="../img/company-logo.jpg" alt="logo" class="company-logos" />
-    <p>Cras eleifend, ligula commodo sodales eleifend, est ipsum viverra era. </p>
+    <div class="wrap-col">
+      <img src="../img/company-logo.jpg" alt="logo" class="company-logos" />
+      <p>Cras eleifend, ligula commodo sodales eleifend, est ipsum viverra era. </p>
+    </div>
   </div>
 </div>
 
@@ -145,20 +165,26 @@ title: index page
 
 <div class="zerogrid row contact">
   <div class="col-1-3">
-  	<h3>Contact</h3>
-    <p>Send mail to:</p>
-    <p>n4sjamk[at]gmail.com</p>
-    <br />
-    <a href="http://twitter.com/"><i class="fa fa-twitter-square fa-3x twitter"></i></a><a href="http://github.com/N4SJAMK"><i class="fa fa-github-square fa-3x"></i></a>
+    <div class="wrap-col">
+    	<h3>Contact</h3>
+      <p>Send mail to:</p>
+      <p>n4sjamk[at]gmail.com</p>
+      <br />
+      <a href="http://twitter.com/"><i class="fa fa-twitter-square fa-3x twitter"></i></a><a href="http://github.com/N4SJAMK"><i class="fa fa-github-square fa-3x"></i></a>
+    </div>
   </div>
   <div class="col-1-3">
-    <h3>Base</h3>
-	  <p>Piippukatu 2</p>
-    <p>40100 Jyvaskyla</p>
-    <p>Finland</p>
+    <div class="wrap-col">
+      <h3>Base</h3>
+  	  <p>Piippukatu 2</p>
+      <p>40100 Jyvaskyla</p>
+      <p>Finland</p>
+    </div>
   </div>
   <div class="col-1-3" id="contact">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3716.6685253285527!2d25.7641276203206!3d62.23998892771814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1405323611806"></iframe>
+    <div class="wrap-col">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3716.6685253285527!2d25.7641276203206!3d62.23998892771814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1405323611806"></iframe>
+    </div>
   </div>
 </div>
 
