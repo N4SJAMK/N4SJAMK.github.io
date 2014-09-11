@@ -33,12 +33,15 @@ html, body {
 	max-width: 100px;
 	display: inline-block;
 	margin-top: 15px;
-	padding-left: 20px;
+	padding-left: 10px;
 	float: left;
 }
 
 .transparent {
 	background: transparent;
+}
+.collapse-button {
+	display: none;
 }
 .collapse {
 	color: transparent;
@@ -297,54 +300,31 @@ html, body {
 /* MEDIA QUERIES */
 
 @media (max-width: 640px) {
-	.collapse-button {
-		font-size: 40px;
-		margin-top: 32px;
-	}
-	.collapse {
-		color: white;
+	.logo {
+		display: none !important;
 	}
 	.nav {
-		background-color: #221a26;
-		height: 80px;
-		position: fixed;
-		width: 100%;
-		z-index: 5;
+		height: 60px;
 		padding-bottom: 0;
 	}
 	.nav ul {
-		padding-left: 20px;
-		padding-top: 4px;
-		margin: 0px;
-		font-weight: bold;
-		display: inline-block;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 0px;
+		margin-top: 20px;
 		float: left;
-		margin-top: 25px;
-	}
-
-	.nav ul li {
-		display: inline-block;
-	}
-	.nav ul li:hover {
-		border-radius: 5px 5px 0px 0px;
-	}
-	#logo-li {
-		text-align: left;
-		display: inline-block;
 	}
 	.nav ul li a {
-		display: block;
-		padding: 4px 8px;
-		text-decoration: none;
-		color: #CCCCCC;
-		font-family: webly;
-		font-weight: lighter;
+		padding: 0px 5px;
 		font-size: 10px;
-		z-index: 5;
 	}
-	.nav ul li a:hover {
-		color: #F75423;
-		font-weight:200;
+
+	.top {
+		padding-top: 60px;
+		height: 460px;
+	}
+	.big-text {
+		margin-bottom: 10px;
 	}
 }
 
