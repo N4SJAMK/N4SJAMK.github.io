@@ -162,52 +162,25 @@ html, body {
 
 /* FACE GRID */
 
-.pics {
-	display: inline-block;
-	padding: 0;
-	margin: 0;
+.picture-area2 {
+	width: 100%;
+}
+.pic-row {
+	display: block;
+}
+.pic {
+	position: relative;
+	float: left;
 	width: 25%;
-	height: 200px;
+	padding-bottom: 25%;
 }
-
-#photo1 {
-	background: url('../img/face1.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
- }
-#photo2 {
-	background: url('../img/face2.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#photo3 {
-	background: url('../img/face3.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#photo4 { 
-	background: url('../img/face4.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.logoshere {
-	text-align: center;
-	line-height: 32px;
-	color: #fff;
-	font-size: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
-	font-family: texgyre;
-	visibility: hidden;
-}
-.logoshere:hover {
-	visibility: visible;
-	background-color: orange;
+.inner {
+	position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    
+    background-image: url('http://www.voice.fi/files/content_800/2012_04_26_4f98eab216f1d.jpg');
+    background-position: center;
+    background-size: cover; 
 }
 
 /* TEAM */
