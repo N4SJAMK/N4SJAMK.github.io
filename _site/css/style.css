@@ -110,8 +110,8 @@ html, body {
 /* PROJECT */
 
 .project {
-	padding-top: 30px;
-	padding-bottom: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .project-area {
 	background-color: white;
@@ -133,7 +133,7 @@ html, body {
 .orangetext {
 	color: orange;
 	font-size: 36px;
-	margin-top: 80px;
+	margin-top: 50px;
 	margin-bottom: 80px;
 	padding-right: 30px;
 }
@@ -141,7 +141,7 @@ html, body {
 .context {
 	font-family: source;
 	padding-bottom: 30px;
-	margin-top: 80px;
+	margin-top: 50px;
 }
 .projectwrapper {
 	background-color: white;
@@ -273,13 +273,17 @@ html, body {
 
 /* CONTACT */
 
+.contact {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 .contact h3 {
-	font-size: 15px;
-	line-height: 12px;
+	font-size: 16px;
+	line-height: 14px;
 }
 .contact p {
-	line-height: 10px;
-	font-size: 12px;
+	line-height: 14px;
+	font-size: 14px;
 }
 .contact i {
 	padding-right: 5px;
@@ -327,6 +331,7 @@ html, body {
 	}
 
 	.project {
+		padding-top: 20px;
 		padding-bottom: 30px;
 	}
 	.orangetext {
@@ -362,7 +367,11 @@ html, body {
 		margin-bottom: 40px;
 		padding-top: 5px;
 	}
-
+	.company-logos {
+		margin: 0 auto;
+		width: 50%;
+		height: 50%;
+	}
 	.vision {
 		padding-top: 40px;
 		padding-bottom: 40px;
