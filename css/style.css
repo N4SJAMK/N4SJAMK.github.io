@@ -332,10 +332,11 @@ html, body {
 	.orangetext {
 		font-size: 26px;
 		padding-right: 0;
-		margin-top: 40px;
+		margin-top: 10px;
+		margin-bottom: 0px;
 	}
 	.context {
-		margin-top: 40px;
+		margin-top: 10px;
 	}
 
 	.text-agile {
@@ -345,6 +346,9 @@ html, body {
 		width: 160px;
 	}
 
+	.success-wrapper {
+		padding-bottom: 10px;
+	}
 	.success-title {
 		font-size: 32px;
 	}
@@ -366,6 +370,10 @@ html, body {
 	.ourvision-text {
 		font-size: 18px;
 		line-height: 26px;
+	}
+
+	.googlemap {
+		display: none !important;
 	}
 }
 
