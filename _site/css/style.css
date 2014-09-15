@@ -216,13 +216,12 @@ html, body {
 	padding-bottom: 30px;
 }
 .success-title {
-	font-size: 48px;
+	font-size: 38px;
 	border-top: 5px solid orange;
 	padding-top: 15px;
-	width: 270px;
 }
 .success-text {
-	padding-top: 70px;
+	padding-top: 50px;
 }
 
 .textareas {
@@ -301,11 +300,10 @@ html, body {
 
 @media (max-width: 640px) {
 	.logo {
-		display: none !important;
+		display: none;
 	}
 	.nav {
 		height: 60px;
-		padding-bottom: 0;
 	}
 	.nav ul {
 		padding-left: 10px;
@@ -320,14 +318,61 @@ html, body {
 	}
 
 	.top {
-		padding-top: 60px;
-		height: 460px;
+		padding-top: 100px;
+		height: 320px;
 	}
 	.big-text {
 		margin-bottom: 10px;
 		font-size: 32px;
 	}
+
+	.project {
+		padding-bottom: 30px;
+	}
+	.orangetext {
+		font-size: 26px;
+		padding-right: 0;
+		margin-top: 40px;
+	}
+	.context {
+		margin-top: 40px;
+	}
+
+	.text-agile {
+		font-size: 32px;
+		margin-top: 50px;
+		margin-bottom: 40px;
+		width: 160px;
+	}
+
+	.success-title {
+		font-size: 32px;
+	}
+	.success-text {
+		padding-top: 0px;
+	}
+
+	.text-partners {
+		font-size: 32px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		padding-top: 5px;
+	}
+
+	.vision {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.ourvision-text {
+		font-size: 18px;
+		line-height: 26px;
+	}
 }
+
+
+
+
+
 
 
 /* TEAMBOARD PAGE */
