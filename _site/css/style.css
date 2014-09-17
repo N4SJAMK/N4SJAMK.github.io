@@ -176,12 +176,24 @@ html, body {
 }
 .inner {
 	position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    
-    background-image: url('http://www.voice.fi/files/content_800/2012_04_26_4f98eab216f1d.jpg');
+    top: 0; bottom: 0; left: 0; right: 0; 
     background-position: center;
     background-size: cover; 
 }
+#heli { background-image: url('../img/faces/team_heli.jpg'); }
+#henri { background-image: url('../img/faces/team_henri.jpg'); }
+#janne { background-image: url('../img/faces/team_janne.jpg'); }
+#jarmo { background-image: url('../img/faces/team_jarmo.jpg'); }
+#jouni { background-image: url('../img/faces/team_jouni.jpg'); }
+#narsu { background-image: url('../img/faces/team_marko.jpg'); }
+#niko { background-image: url('../img/faces/team_niko.jpg'); }
+#paavo { background-image: url('../img/faces/team_paavo.jpg'); }
+#petri { background-image: url('../img/faces/team_petri.jpg'); }
+#taneli { background-image: url('../img/faces/team_taneli.jpg'); }
+#teemu { background-image: url('../img/faces/team_teemu.jpg'); }
+#tero { background-image: url('../img/faces/team_tero.jpg'); }
+
+
 
 /* TEAM */
 
@@ -358,12 +370,6 @@ html, body {
 		display: none !important;
 	}
 }
-
-
-
-
-
-
 
 /* TEAMBOARD PAGE */
 .tb-pic-wrapper {
