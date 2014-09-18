@@ -1,6 +1,6 @@
 ---
-title: Our way to success.
+title: Examples of our works.
 tag: success-text
 ---
 
-Quisque fermentum posuere augue, in rhoncus est tincidunt a. Duis elementum nisl eu est lacinia varius. Mauris mollis lacus velit, eget dictum dui blandit in. Nam laoreet est at pellentesque iaculis. Was this test succesful?
+This is a collection done by N4S@JAMK Project team and Challenge Factory 2014 team
