@@ -4,7 +4,7 @@ html, body {
 }
 
 p, h1, h2, h3, h4, h5 {
-	font-family: source, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;;
 }
 
 .wrapper {
@@ -142,7 +142,7 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .context {
-	font-family: source;
+	font-family: 'Source Sans Pro', sans-serif;
 	padding-bottom: 30px;
 	margin-top: 50px;
 }
