@@ -21,7 +21,7 @@ p {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	background-color: white;
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 	text-decoration: none;
 	color: #221a26;
 	font-size: 14px;
@@ -84,7 +84,6 @@ p {
 	padding: 10px 20px;
 	text-decoration: none;
 	color: #CCCCCC;
-	font-family: webly;
 	font-weight: lighter;
 	font-size: 12px;
 	z-index: 050;
