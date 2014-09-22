@@ -1,6 +1,6 @@
 ---
-title: Ipsum
+title: Debian package repository for TOAS
 tag: success-text-box
 ---
 
-Suspendisse sit amet enim semper, placerat leo vestibulum, suscipit ipsum. Cras eleifend, ligula commodo sodales eleifend, est ipsum viverra era.
+The repository enables open source community to install and deploy Tieto Open Application Suite for Ubuntu Linux.
