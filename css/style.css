@@ -3,6 +3,10 @@ html, body {
 	padding: 0;
 }
 
+p {
+	font-family: source, sans-serif;
+}
+
 .wrapper {
 	background: url('../img/n4sjamk_background_pic.jpg');
 	background-position: center;
