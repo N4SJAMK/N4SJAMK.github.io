@@ -1,6 +1,6 @@
 ---
-title: Examples of our works.
+title: We build experiences
 tag: success-text
 ---
 
-This is a collection done by N4S@JAMK Project team and Challenge Factory 2014 team
+Here is collection of works done with N4S@JAMK and Summer Factory 2014 teams during the N4S-Program.
