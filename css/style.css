@@ -4,7 +4,8 @@ html, body {
 }
 
 p, h1, h2, h3, h4, h5, a {
-	font-family: 'Source Sans Pro', sans-serif;;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #0f0f0f;
 }
 
 .wrapper {
@@ -243,7 +244,6 @@ p, h1, h2, h3, h4, h5, a {
 .textareas p {
 	font-size: 16px;
 	font-style: normal;
-	color: black;
 	padding-right: 30px;
 }
 .text-area-wrapper {
@@ -263,8 +263,10 @@ p, h1, h2, h3, h4, h5, a {
 }
 
 .company-logos {
-	width: 100%;
-	height: 100%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	width: 80%;
+	height: 80%;
 }
 
 /* VISION */
@@ -276,6 +278,9 @@ p, h1, h2, h3, h4, h5, a {
 	color: white;
 	padding-top: 100px;
 	padding-bottom: 100px;
+}
+.ourvision-text {
+	color: white;
 }
 
 /* CONTACT */
@@ -289,7 +294,7 @@ p, h1, h2, h3, h4, h5, a {
 	line-height: 14px;
 }
 .contact p {
-	line-height: 14px;
+	line-height: 12px;
 	font-size: 14px;
 }
 .contact i {
@@ -304,6 +309,8 @@ p, h1, h2, h3, h4, h5, a {
 .footer {
 	padding-top: 8px;
 	text-align: center;
+}
+.footer p {
 	color: white;
 }
 
