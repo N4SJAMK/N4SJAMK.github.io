@@ -94,13 +94,11 @@ title: index page
         <img src="img/faces/{{member.image}}"
             alt="{{member.full_name}}" class="face" />
         <!-- Content -->
-        <div class="face-content">
-          <!-- Name -->
-          <div class="face-content-name">
+        <div class="face-card">
+          <div class="face-card-name">
             {{member.full_name}}
           </div>
-          <!-- Title -->
-          <div class="face-content-title">
+          <div class="face-card-title">
             {{member.title}}
           </div>
         </div>
@@ -229,8 +227,27 @@ title: index page
     $(ev.currentTarget).removeClass('face-container-hover');
   });
 
+  // prevent 'ghost'-clicks
+
+  var lastTapTime = null;
+
+  function isGhost() {
+    var ghostTime      = 200;
+    var currentTapTime = new Date().getTime();
+
+    if(lastTapTime == null || currentTapTime > (lastTapTime + ghostTime)) {
+      lastTapTime = currentTapTime;
+
+      console.log('no ghost');
+      return false;
+    }
+    return true;
+  }
+
   // add hover effects also on click
   $('.face-container').on('tap', function(ev) {
+    if(isGhost()) return false;
+
     if( $(ev.currentTarget).hasClass('face-container-hover') ) {
       return $(ev.currentTarget).removeClass('face-container-hover');
     }
