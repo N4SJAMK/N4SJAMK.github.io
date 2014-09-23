@@ -99,7 +99,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Graphic Designer
+            UX / Graphics
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Mestari
+            Core
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Continuous Deployment
+            Core
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Pidän Karbonaarasta
+            Infra / Network
           </div>
         </div>
       </div>
@@ -171,7 +171,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Parta
+            Test Automation
           </div>
         </div>
       </div>
@@ -189,7 +189,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Reject
+            Backend
           </div>
         </div>
       </div>
@@ -207,7 +207,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Narsu
+            Project Management
           </div>
         </div>
       </div>
@@ -225,7 +225,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Pukusetä
+            Project Owner
           </div>
         </div>
       </div>
@@ -243,7 +243,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Java on Paras
+            Test Automation
           </div>
         </div>
       </div>
@@ -261,7 +261,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            babababa yee
+            Project Management
           </div>
         </div>
       </div>
@@ -279,7 +279,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Tero
+            Network Specialist
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
           </div>
           <!-- Title -->
           <div class="face-content-title">
-            Pidän Dotasta aamulla ajattelen ensiksi dotaa dota on paras
+            Front-end
           </div>
         </div>
       </div>
@@ -432,7 +432,7 @@
 </div>
 
 <script type="text/javascript" src="js/smoothscroll.js"></script>
-<script type="text/javascript" src="js/jquery.fastclick.js"></script>
+<script type="text/javascript" src="js/jquery.tap.js"></script>
 
 <script>
   // apparently there is jQuery in this site, I take no responsibility.
@@ -446,7 +446,7 @@
   });
 
   // add hover effects also on click
-  $('.face-container').fastClick(function(ev) {
+  $('.face-container').on('tap', function(ev) {
     if( $(ev.currentTarget).hasClass('face-container-hover') ) {
       return $(ev.currentTarget).removeClass('face-container-hover');
     }

@@ -1,62 +1,62 @@
 [
 	{
 		"full_name": "Heli Sutinen",
-		"title":     "Graphic Designer",
+		"title":     "UX / Graphics",
 		"image":     "team_heli.jpg"
 	},
 	{
 		"full_name": "Henri Tervakoski",
-		"title":     "Mestari",
+		"title":     "Core",
 		"image":     "team_henri.jpg"
 	},
 	{
 		"full_name": "Janne Alatalo",
-		"title":     "Continuous Deployment",
+		"title":     "Core",
 		"image":     "team_janne.jpg"
 	},
 	{
 		"full_name": "Jarmo Viinikanoja",
-		"title":     "Pidän Karbonaarasta",
+		"title":     "Infra / Network",
 		"image":     "team_jarmo.jpg"
 	},
 	{
 		"full_name": "Parta Pete",
-		"title":     "Parta",
+		"title":     "Test Automation",
 		"image":     "team_petri.jpg"
 	},
 	{
 		"full_name": "Taneli Hartikainen",
-		"title":     "Reject",
+		"title":     "Backend",
 		"image":     "team_taneli.jpg"
 	},
 	{
 		"full_name": "Marko Rintamäki",
-		"title":     "Narsu",
+		"title":     "Project Management",
 		"image":     "team_marko.jpg"
 	},
 	{
 		"full_name": "Jouni Huotari",
-		"title":     "Pukusetä",
+		"title":     "Project Owner",
 		"image":     "team_jouni.jpg"
 	},
 	{
 		"full_name": "Niko Korhonen",
-		"title":     "Java on Paras",
+		"title":     "Test Automation",
 		"image":     "team_niko.jpg"
 	},
 	{
 		"full_name": "Paavo Nelimarkka",
-		"title":     "babababa yee",
+		"title":     "Project Management",
 		"image":     "team_paavo.jpg"
 	},
 	{
 		"full_name": "Tero Oinonen",
-		"title":     "Tero",
+		"title":     "Network Specialist",
 		"image":     "team_tero.jpg"
 	},
 	{
 		"full_name": "Teemu Laukka",
-		"title":     "Pidän Dotasta aamulla ajattelen ensiksi dotaa dota on paras",
+		"title":     "Front-end",
 		"image":     "team_teemu.jpg"
 	}
 ]
