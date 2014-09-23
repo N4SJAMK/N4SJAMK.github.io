@@ -3,8 +3,12 @@ html, body {
 	padding: 0;
 }
 
-p, h1, h2, h3, h4, h5, a {
+p, a {
 	font-family: 'Source Sans Pro', sans-serif;
+	color: #0f0f0f;
+}
+h1, h2, h3, h4, h5 {
+	font-family: "Open Sans", sans-serif;
 	color: #0f0f0f;
 }
 
@@ -27,7 +31,7 @@ p, h1, h2, h3, h4, h5, a {
 	color: #221a26;
 	font-size: 14px;
 	font-weight: bold;
-}	
+}
 
 /* HEADER */
 
@@ -103,6 +107,7 @@ p, h1, h2, h3, h4, h5, a {
 .big-text {
 	color: white;
 	font-size: 48px;
+	font-family: 'Open Sans', sans-serif;
 }
 .arrow {
 	color: white;
@@ -137,6 +142,7 @@ p, h1, h2, h3, h4, h5, a {
 .orangetext {
 	color: orange;
 	font-size: 36px;
+	font-family: "Open Sans", sans-serif;
 	margin-top: 50px;
 	margin-bottom: 80px;
 	padding-right: 30px;
@@ -159,45 +165,67 @@ p, h1, h2, h3, h4, h5, a {
 	margin-bottom: 90px;
 	color: white;
 	font-size: 56px;
+	font-family: "Open Sans", sans-serif;
 	border-top: 5px solid orange;
 	padding-top: 15px;
-	width: 236px;
+	width: 360px;
 }
 
 /* FACE GRID */
 
-.picture-area2 {
-	width: 100%;
+.face-container {
+	width:    100%;
+	position: relative;
 }
-.pic-row {
+
+.face-container:hover > .face {
+	-webkit-filter: blur(4px);
+	-moz-filter:    blur(4px);
+	filter:         blur(4px);
+}
+
+.face-container:hover > .face-content {
+	opacity: 1.0;
+	/*
+		If you want a background-color for the blurred image,
+		uncomment the following line and set the color as you need.
+	 */
+	/*background-color: rgba(255, 165, 0, 0.65);*/
+}
+
+.face {
+	width:  100%;
+	height: auto;
+
+	max-width: 100%;
+
+	z-index: -1;
 	display: block;
 }
-.pic {
-	position: relative;
-	float: left;
-	width: 25%;
-	padding-bottom: 25%;
-}
-.inner {
+
+.face-content {
 	position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0; 
-    background-position: center;
-    background-size: cover; 
+
+	top:  0px;
+	left: 0px;
+
+	width:  100%;
+	height: 100%;
+
+	opacity:     0.0;
+	text-align:  center;
+	padding-top: 35%;
 }
-#heli { background-image: url('../img/faces/team_heli.jpg'); }
-#henri { background-image: url('../img/faces/team_henri.jpg'); }
-#janne { background-image: url('../img/faces/team_janne.jpg'); }
-#jarmo { background-image: url('../img/faces/team_jarmo.jpg'); }
-#jouni { background-image: url('../img/faces/team_jouni.jpg'); }
-#narsu { background-image: url('../img/faces/team_marko.jpg'); }
-#niko { background-image: url('../img/faces/team_niko.jpg'); }
-#paavo { background-image: url('../img/faces/team_paavo.jpg'); }
-#petri { background-image: url('../img/faces/team_petri.jpg'); }
-#taneli { background-image: url('../img/faces/team_taneli.jpg'); }
-#teemu { background-image: url('../img/faces/team_teemu.jpg'); }
-#tero { background-image: url('../img/faces/team_tero.jpg'); }
 
+.face-content-name, .face-content-title {
+	color:       white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
+.face-content-name {
+	font-weight:   bold;
+	margin-bottom: 8px;
+}
 
 /* TEAM */
 
@@ -206,6 +234,7 @@ p, h1, h2, h3, h4, h5, a {
 }
 .success-title {
 	font-size: 38px;
+	font-family: "Open Sans", sans-serif;
 	border-top: 5px solid orange;
 	padding-top: 15px;
 }
@@ -240,14 +269,20 @@ p, h1, h2, h3, h4, h5, a {
 	font-size: 56px;
 	border-top: 5px solid orange;
 	padding-top: 15px;
-	width: 250px;
+	width: 330px;
 }
-
 .company-logos {
 	margin-top: 30px;
 	margin-bottom: 10px;
 	width: 80%;
-	height: 80%;
+	height: auto;
+}
+.logo-container {
+	height: 110px;
+}
+.partners {
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
 
 /* VISION */

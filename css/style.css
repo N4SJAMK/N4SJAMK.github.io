@@ -3,8 +3,12 @@ html, body {
 	padding: 0;
 }
 
-p, h1, h2, h3, h4, h5, a {
+p, a {
 	font-family: 'Source Sans Pro', sans-serif;
+	color: #0f0f0f;
+}
+h1, h2, h3, h4, h5 {
+	font-family: "Open Sans", sans-serif;
 	color: #0f0f0f;
 }
 
@@ -103,6 +107,7 @@ p, h1, h2, h3, h4, h5, a {
 .big-text {
 	color: white;
 	font-size: 48px;
+	font-family: 'Open Sans', sans-serif;
 }
 .arrow {
 	color: white;
@@ -137,6 +142,7 @@ p, h1, h2, h3, h4, h5, a {
 .orangetext {
 	color: orange;
 	font-size: 36px;
+	font-family: "Open Sans", sans-serif;
 	margin-top: 50px;
 	margin-bottom: 80px;
 	padding-right: 30px;
@@ -159,9 +165,10 @@ p, h1, h2, h3, h4, h5, a {
 	margin-bottom: 90px;
 	color: white;
 	font-size: 56px;
+	font-family: "Open Sans", sans-serif;
 	border-top: 5px solid orange;
 	padding-top: 15px;
-	width: 236px;
+	width: 360px;
 }
 
 /* FACE GRID */
@@ -233,6 +240,7 @@ p, h1, h2, h3, h4, h5, a {
 }
 .success-title {
 	font-size: 38px;
+	font-family: "Open Sans", sans-serif;
 	border-top: 5px solid orange;
 	padding-top: 15px;
 }
@@ -267,14 +275,20 @@ p, h1, h2, h3, h4, h5, a {
 	font-size: 56px;
 	border-top: 5px solid orange;
 	padding-top: 15px;
-	width: 250px;
+	width: 330px;
 }
-
 .company-logos {
 	margin-top: 30px;
 	margin-bottom: 10px;
 	width: 80%;
-	height: 80%;
+	height: auto;
+}
+.logo-container {
+	height: 110px;
+}
+.partners {
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
 
 /* VISION */
