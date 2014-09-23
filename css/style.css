@@ -183,53 +183,62 @@ h1, h2, h3, h4, h5 {
 	width:    100%;
 	position: relative;
 }
-
+/*
 .face-container-hover > .face {
 	-webkit-filter: blur(4px);
 	-moz-filter:    blur(4px);
 	filter:         blur(4px);
-}
+}*/
 
-.face-container-hover > .face-content {
-	opacity: 1.0;
+/*.face-container-hover > .face-content {
+	opacity: 1.0;*/
 	/*
 		If you want a background-color for the blurred image,
 		uncomment the following line and set the color as you need.
 	 */
 	/*background-color: rgba(255, 165, 0, 0.65);*/
-}
+/*}*/
 
 .face {
-	width:  100%;
-	height: auto;
-
-	max-width: 100%;
-
-	z-index: -1;
 	display: block;
+
+	width:     100%;
+	height:    auto;
+	max-width: 100%
 }
 
-.face-content {
-	position: absolute;
+.face-card {
+	position: absolute; bottom: 0; left: 0; right: 0;
 
-	top:  0px;
-	left: 0px;
+	height:     0;
+	max-height: 0;
 
-	width:  100%;
-	height: 100%;
+	box-sizing: border-box;
 
-	opacity:     0.0;
+	color:       #FFF;
 	text-align:  center;
-	padding-top: 35%;
-}
-
-.face-content-name, .face-content-title {
-	color:       white;
 	font-family: 'Source Sans Pro', sans-serif;
+
+	background: rgba(0, 0, 0, 0.65);
+
+	transition:         max-height .2s;
+	-o-transition:      max-height .2s;
+	-moz-transition:    max-height .2s;
+	-webkit-transition: max-height .2s;
 }
 
-.face-content-name {
+.face-container-hover > .face-card {
+	height:     auto;
+	max-height: 128px;
+}
+
+.face-card-name {
 	font-weight:   bold;
+	margin-top:    8px;
+	margin-bottom: 4px;
+}
+
+.face-card-title {
 	margin-bottom: 8px;
 }
 
