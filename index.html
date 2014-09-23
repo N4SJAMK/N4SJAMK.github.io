@@ -216,7 +216,7 @@ title: index page
 </div>
 
 <script type="text/javascript" src="js/smoothscroll.js"></script>
-<script type="text/javascript" src="js/jquery.fastclick.js"></script>
+<script type="text/javascript" src="js/jquery.tap.js"></script>
 
 <script>
   // apparently there is jQuery in this site, I take no responsibility.
@@ -230,7 +230,7 @@ title: index page
   });
 
   // add hover effects also on click
-  $('.face-container').fastClick(function(ev) {
+  $('.face-container').on('tap', function(ev) {
     if( $(ev.currentTarget).hasClass('face-container-hover') ) {
       return $(ev.currentTarget).removeClass('face-container-hover');
     }
