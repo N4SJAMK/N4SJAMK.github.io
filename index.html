@@ -242,7 +242,10 @@ title: index page
     if( $(ev.currentTarget).hasClass('face-container-hover') ) {
       return $(ev.currentTarget).removeClass('face-container-hover');
     }
-    $(ev.currentTarget).addClass('face-container-hover');
+    $('.face-container')
+      .removeClass('face-container-hover');
+    $(ev.currentTarget)
+      .addClass('face-container-hover');
   });
 
 </script>
