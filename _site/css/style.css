@@ -287,10 +287,10 @@ h1, h2, h3, h4, h5 {
 	height: 110px;
 }
 .partners {
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-bottom: 30px;
 }
-
+#digile { padding-top: 15px; }
 /* VISION */
 
 .vision {
