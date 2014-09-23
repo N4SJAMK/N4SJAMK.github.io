@@ -173,6 +173,8 @@ p, h1, h2, h3, h4, h5, a {
 
 .face-container:hover > .face {
 	-webkit-filter: blur(4px);
+	-moz-filter:    blur(4px);
+	filter:         blur(4px);
 }
 
 .face-container:hover > .face-content {
