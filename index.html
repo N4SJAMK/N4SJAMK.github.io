@@ -240,8 +240,7 @@ title: index page
   // add hover effects also on click
   $('.face-container').on('click', function(ev) {
     if( $(ev.currentTarget).hasClass('face-container-hover') ) {
-      $(ev.currentTarget).removeClass('face-container-hover');
-      return
+      return $(ev.currentTarget).removeClass('face-container-hover');
     }
     $(ev.currentTarget).addClass('face-container-hover');
   });
