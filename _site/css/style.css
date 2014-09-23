@@ -173,18 +173,24 @@ h1, h2, h3, h4, h5 {
 
 /* FACE GRID */
 
+@media (max-width: 640px) {
+	.face-grid {
+		display: none;
+	}
+}
+
 .face-container {
 	width:    100%;
 	position: relative;
 }
 
-.face-container:hover > .face {
+.face-container-hover > .face {
 	-webkit-filter: blur(4px);
 	-moz-filter:    blur(4px);
 	filter:         blur(4px);
 }
 
-.face-container:hover > .face-content {
+.face-container-hover > .face-content {
 	opacity: 1.0;
 	/*
 		If you want a background-color for the blurred image,
