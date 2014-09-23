@@ -28,7 +28,7 @@ title: index page
       <div class="cols-1-3">
         <a href="#top" class="smoothScroll"><img src="img/n4sjamk_logo_notext.svg" class="logo" /></a>
       </div>
-      <div class="cols-2-3">  
+      <div class="cols-2-3">
         <ul>
           <li><a href="#project" class="smoothScroll">PROJECT</a></li>
           <li><a href="#team" class="smoothScroll">TEAM</a></li>
@@ -58,7 +58,7 @@ title: index page
     {% for post in site.tags.we-are limit:1 %}
       <p class="orangetext"> {{ post.title }} </p>
     {% endfor %}
-    
+
     </div>
   </div>
   <div class="col-1-2">
@@ -83,61 +83,31 @@ title: index page
   </div>
 </div>
 
-<div class="zerogrid row">
-  <div class="picture-area2">
-    <div class="pic-row">
-      <div class="pic">
-        <div class="inner" id="heli"></div>
+<!-- GO FACES -->
+<div class="zerogrid">
+  <div class="row">
+    {% for member in site.data.members %}
+      <!-- Face -->
+      <div class="col-1-4 face-container">
+        <!-- Pic -->
+        <img src="img/faces/{{member.image}}"
+            alt="{{member.full_name}}" class="face" />
+        <!-- Content -->
+        <div class="face-content">
+          <!-- Name -->
+          <div class="face-content-name">
+            {{member.full_name}}
+          </div>
+          <!-- Title -->
+          <div class="face-content-title">
+            {{member.title}}
+          </div>
+        </div>
       </div>
-      
-      <div class="pic">
-        <div class="inner" id="henri"></div>
-      </div>
-      
-      <div class="pic">
-        <div class="inner" id="janne"></div>
-      </div>
-      
-      <div class="pic">
-        <div class="inner" id="jarmo"></div>
-      </div>
-
-      <div class="pic">
-        <div class="inner" id="petri"></div>
-      </div>
-      
-      <div class="pic">
-        <div class="inner" id="taneli"></div>
-      </div>
-    </div>
-
-    <div class="pic-row">
-      <div class="pic">
-        <div class="inner" id="jouni"></div>
-      </div>
-      
-      <div class="pic">
-        <div class="inner" id="narsu"></div>
-      </div>
-      
-      <div class="pic">
-        <div class="inner" id="niko"></div>
-      </div>
-      
-      <div class="pic">
-        <div class="inner" id="paavo"></div>
-      </div>
-
-       <div class="pic">
-        <div class="inner" id="tero"></div>
-      </div>
-
-      <div class="pic">
-        <div class="inner" id="teemu"></div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
+<!-- END FACES -->
 
 <div class="success-wrapper">
     <div class="zerogrid row">
@@ -246,7 +216,7 @@ title: index page
     <p>&copy;N4S@JAMK 2014. All rights reserved.</p>
   </footer>
 </div>
- 
+
 <script type="text/javascript" src="js/smoothscroll.js"></script>
 
 </body>

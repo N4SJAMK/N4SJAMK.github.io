@@ -1,0 +1,62 @@
+[
+	{
+		"full_name": "Heli Sutinen",
+		"title":     "Graphic Designer",
+		"image":     "team_heli.jpg"
+	},
+	{
+		"full_name": "Henri Tervakoski",
+		"title":     "Mestari",
+		"image":     "team_henri.jpg"
+	},
+	{
+		"full_name": "Janne Alatalo",
+		"title":     "Continuous Deployment",
+		"image":     "team_janne.jpg"
+	},
+	{
+		"full_name": "Jarmo Viinikanoja",
+		"title":     "Pidän Karbonaarasta",
+		"image":     "team_jarmo.jpg"
+	},
+	{
+		"full_name": "Parta Pete",
+		"title":     "Parta",
+		"image":     "team_petri.jpg"
+	},
+	{
+		"full_name": "Taneli Hartikainen",
+		"title":     "Reject",
+		"image":     "team_taneli.jpg"
+	},
+	{
+		"full_name": "Marko Rintamäki",
+		"title":     "Narsu",
+		"image":     "team_marko.jpg"
+	},
+	{
+		"full_name": "Jouni Huotari",
+		"title":     "Pukusetä",
+		"image":     "team_jouni.jpg"
+	},
+	{
+		"full_name": "Niko Korhonen",
+		"title":     "Java on Paras",
+		"image":     "team_niko.jpg"
+	},
+	{
+		"full_name": "Paavo Nelimarkka",
+		"title":     "babababa yee",
+		"image":     "team_paavo.jpg"
+	},
+	{
+		"full_name": "Tero Oinonen",
+		"title":     "Tero",
+		"image":     "team_tero.jpg"
+	},
+	{
+		"full_name": "Teemu Laukka",
+		"title":     "Pidän Dotasta aamulla ajattelen ensiksi dotaa dota on paras",
+		"image":     "team_teemu.jpg"
+	}
+]
