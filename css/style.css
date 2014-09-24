@@ -317,6 +317,7 @@ h1, h2, h3, h4, h5 {
 /* CONTACT */
 
 .contact {
+	background-color: #221a26;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -338,8 +339,7 @@ h1, h2, h3, h4, h5 {
 /* FOOTER */
 
 .footer {
-	padding-top: 8px;
-	text-align: center;
+	background-color: #221a26;
 }
 .footer p {
 	color: white;
