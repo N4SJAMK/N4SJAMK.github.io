@@ -213,27 +213,33 @@ html {
 /** MEET THE PROJECT */
 
 #meet-the-project {
-	height:           600px;
+	height:           680px;
 	background-color: #FFF;
+
+	position: relative;
 }
 
 #meet-the-project .content {
-	padding-right: 64px;
+	width: 50%;
 }
 
 #meet-the-project .background {
-	height: 600px;
+	height: 680px;
+	width: 35%;
 
 	background:      url('../img/about_picture.png');
 	background-size: cover;
+
+	position: absolute; top: 0; left: 65%;
 }
 
 @media (max-width: 980px) {
-	#meet-the-project .col-1-2 {
-		width: 75%;
+	#meet-the-project .content {
+		width: 65%;
 	}
 
 	#meet-the-project .background {
+		left:  75%;
 		width: 25%;
 	}
 }
@@ -398,6 +404,18 @@ html {
 	color:         #F75423;
 	font-size:     32px;
 	margin-bottom: 8px;
+}
+
+/** SUPPORTED BY */
+
+#supported-by .motto {
+	color: #FFF;
+}
+
+/** MEET THE PARTNERS */
+
+#meet-the-partners {
+	background-color: #FFF;
 }
 
 /* TEAM */
