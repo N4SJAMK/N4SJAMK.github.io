@@ -307,8 +307,9 @@ h1, h2, h3, h4, h5 {
 	line-height: 42px;
 	font-size: 26px;
 	color: white;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 100px 0;
+	magin: auto 60px;
+	border-bottom: 1px solid white;
 }
 .ourvision-text {
 	color: white;
