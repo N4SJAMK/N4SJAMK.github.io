@@ -72,9 +72,11 @@ title: index page
   <!-- Agile by nature -->
   <div id="agile-by-nature" class="zerogrid background">
     <div class="row">
-      <div class="col-1 content">
-        <p class="motto">Agile by<br />nature</p>
-      </div>
+      <div class="col-1">
+        <div class="content">
+          <p class="motto">Agile by<br />nature</p>
+        </div>
+        </div>
     </div>
   </div>
 
@@ -101,40 +103,33 @@ title: index page
     </div>
   </div>
 
-
-
-<div class="success-wrapper">
-    <div class="zerogrid row">
-      <div id="our">
-        {% for post in site.tags.success-text limit:1 %}
-        <div class="col-1-3">
-          <div class="wrap-col">
-            <p class="success-title">{{ post.title | remove: '<p>' | remove: '</p>' }}</p>
-          </div>
+  <div id="build-experiences" class="zerogrid">
+    <div class="row">
+      <div class="col-1-3 info">
+        <div class="content">
+          <p class="motto">We build experiences</p>
+          <p class="text"><i>Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba</i></p>
         </div>
-
-        <div class="col-2-3">
-          <div class="wrap-col">
-            <p class="success-text"> {{ post.content | remove: '<p>' | remove: '</p>' }} </p>
-            {% endfor %}
-          </div>
+      </div>
+      <div class="col-2-3">
+        <div class="row experiences">
+          {% for experience in site.data.experiences %}
+            <div class="col-1-2">
+              <div class="content">
+                <div class="experience-title">
+                  {{experience.title}}
+                </div>
+                <div class="experience-content">
+                  {{experience.description}}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>
-
-
-  <div class="zerogrid row text-area-wrapper">
-    {% for post in site.tags.works %}
-    <div class="col-1-3">
-      <div class="wrap-col textareas">
-        <h2> {{ post.title | remove: '<p>' | remove: '</h2>' }} </h2>
-        <p> {{ post.content | remove: '<p>' | remove: '</p>' }} </p>
-      </div>
-    </div>
-    {% endfor %}
   </div>
 
-</div>
 
 <div class="wrapper" id="partners">
   <div class="zerogrid row">
