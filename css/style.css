@@ -168,8 +168,8 @@ html {
 	-webkit-background-size: cover;
 }
 
-.zerogrid {
-	width: 100%;
+.full {
+	width: 100% !important;
 }
 
 .background {
@@ -440,7 +440,6 @@ html {
 	margin-bottom: 90px;
 	color: white;
 	font-size: 56px;
-	border-top: 5px solid orange;
 	padding-top: 15px;
 	width: 330px;
 }

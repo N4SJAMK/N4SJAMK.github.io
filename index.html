@@ -53,84 +53,106 @@ title: index page
 </div>
 
   <!-- Meet the project -->
-  <div id="meet-the-project" class="zerogrid">
-    <div class="row">
+  <div id="meet-the-project">
 
-      <div class="col-1-2">
-        <div class="content">
-          <p class="motto">{{site.data.meet_the_project.title}}</h1>
-          <p class="text">{{site.data.meet_the_project.content}}</p>
-          <a class="button" href="">More About N4S</a>
+    <div class="zerogrid">
+      <div class="row">
+
+        <div class="col-1-2">
+          <div class="content">
+            <p class="motto">{{site.data.meet_the_project.title}}</h1>
+            <p class="text">{{site.data.meet_the_project.content}}</p>
+            <a class="button" href="">More About N4S</a>
+          </div>
         </div>
+
       </div>
-
-      <div class="col-1-2 background"></div>
-
     </div>
+
+    <!--<div class="background"></div>-->
+
   </div>
 
   <!-- Agile by nature -->
-  <div id="agile-by-nature" class="zerogrid background">
-    <div class="row">
-      <div class="col-1">
-        <div class="content">
-          <p class="motto">Agile by<br />nature</p>
-        </div>
-        </div>
+  <div id="agile-by-nature">
+    <div class="zerogrid">
+      <div class="row">
+        <div class="col-1">
+          <div class="content">
+            <p class="motto">Agile by<br />nature</p>
+          </div>
+          </div>
+      </div>
     </div>
   </div>
 
   <!-- Meet the team -->
-  <div id="meet-the-team" class="zerogrid">
-    <div class="row">
-      {% for member in site.data.members %}
-        <!-- Face -->
-        <div class="col-1-4 face-container">
-          <!-- Pic -->
-          <img src="img/faces/{{member.image}}"
-              alt="{{member.full_name}}" class="face" />
-          <!-- Content -->
-          <div class="face-card">
-            <div class="face-card-name">
-              {{member.full_name}}
-            </div>
-            <div class="face-card-title">
-              {{member.title}}
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <div id="build-experiences" class="zerogrid">
-    <div class="row">
-      <div class="col-1-3 info">
-        <div class="content">
-          <p class="motto">We build experiences</p>
-          <p class="text"><i>Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba</i></p>
-        </div>
-      </div>
-      <div class="col-2-3">
-        <div class="row experiences">
-          {% for experience in site.data.experiences %}
-            <div class="col-1-2">
-              <div class="content">
-                <div class="experience-title">
-                  {{experience.title}}
-                </div>
-                <div class="experience-content">
-                  {{experience.description}}
-                </div>
+  <div id="meet-the-team">
+    <div class="zerogrid full">
+      <div class="row">
+        {% for member in site.data.members %}
+          <!-- Face -->
+          <div class="col-1-4 face-container">
+            <!-- Pic -->
+            <img src="img/faces/{{member.image}}"
+                alt="{{member.full_name}}" class="face" />
+            <!-- Content -->
+            <div class="face-card">
+              <div class="face-card-name">
+                {{member.full_name}}
+              </div>
+              <div class="face-card-title">
+                {{member.title}}
               </div>
             </div>
-          {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div id="build-experiences">
+    <div class="zerogrid">
+      <div class="row">
+        <div class="col-1-3 info">
+          <div class="content">
+            <p class="motto">We build experiences</p>
+            <p class="text"><i>Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba</i></p>
+          </div>
+        </div>
+        <div class="col-2-3">
+          <div class="row experiences">
+            {% for experience in site.data.experiences %}
+              <div class="col-1-2">
+                <div class="content">
+                  <div class="experience-title">
+                    {{experience.title}}
+                  </div>
+                  <div class="experience-content">
+                    {{experience.description}}
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="zerogrid">
+    <div class="row">
+      <div class="col-1">
+        <div class="content">
+          <p class="motto">Supported By</p>
         </div>
       </div>
     </div>
   </div>
 
 
+
+  <!--
 <div class="wrapper" id="partners">
   <div class="zerogrid row">
     <div class="col-1-3">
@@ -140,7 +162,7 @@ title: index page
     </div>
   </div>
 </div>
-
+ -->
 <div class="zerogrid row partners" id="black">
   <div class="col-1-3 logo-container" id="digile">
     <div class="wrap-col">
