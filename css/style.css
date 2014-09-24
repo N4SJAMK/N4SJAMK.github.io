@@ -13,9 +13,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .wrapper {
-	background: url('../img/n4sjamk_background_pic.jpg');
+	/*background: url('../img/n4sjamk_background_pic.jpg');
 	background-position: center;
-	margin: 0;
+	*/margin: 0;
 	padding: 0;
 }
 
@@ -160,21 +160,129 @@ h1, h2, h3, h4, h5 {
 
 /* AGILE BY NATURE */
 
-.text-agile {
-	margin-top: 100px;
-	margin-bottom: 90px;
+
+/** DEFAULTS */
+
+html {
+	background: url('../img/n4sjamk_background_pic.jpg') no-repeat center center fixed;
+
+	background-size:         cover;
+	-webkit-background-size: cover;
+}
+
+.zerogrid {
+	width: 100%;
+}
+
+.background {
+	background:          #FFF;
+	background-position: center;
+}
+
+.content {
+	padding-left:   64px;
+	padding-top:    32px;
+	padding-bottom: 64px;
+}
+
+.motto {
+	font-size:   56px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+	padding-left:  16px;
+	padding-right: 16px;
+
+	padding-top:    8px;
+	padding-bottom: 8px;
+
+	border:        2px solid #F75423;
+	border-radius: 4px;
+
+	color:           #F75423;
+	text-decoration: none;
+
+	transition:         background-color 0.2s linear;
+	-webkit-transition: background-color 0.2s linear;
+}
+
+.button:hover {
+	color:            #FFF;
+	background-color: #F75423;
+}
+
+/** MEET THE PROJECT */
+
+#meet-the-project {
+	height:           600px;
+	background-color: #FFF;
+}
+
+#meet-the-project .content {
+	padding-right: 64px;
+}
+
+#meet-the-project .background {
+	height: 600px;
+	background: url('../img/about_picture.png');
+	background-size: cover;
+}
+
+@media (max-width: 980px) {
+	#meet-the-project .col-1-2 {
+		width: 75%;
+	}
+
+	#meet-the-project .background {
+		width: 25%;
+	}
+}
+
+@media (max-width: 640px) {
+	#meet-the-project .col-1-2 {
+		width: 100%;
+	}
+
+	#meet-the-project .background {
+		display: none;
+	}
+}
+
+#meet-the-project .motto {
+	color: #F75423;
+}
+
+#meet-the-project .text {
+	color:         #4D4D4D;
+	margin-bottom: 48px;
+}
+
+#meet-the-project img {
+	display: block;
+
+	width:     100%;
+	max-width: 100%;
+
+	height: auto;
+}
+
+/** AGILE MANIFEST */
+
+#agile-by-nature {
+	background: transparent;
+}
+
+#agile-by-nature .motto {
 	color: white;
-	font-size: 56px;
-	font-family: "Open Sans", sans-serif;
-	border-top: 5px solid orange;
-	padding-top: 15px;
-	width: 360px;
 }
 
 /* FACE GRID */
 
 @media (max-width: 640px) {
-	.face-grid {
+	#meet-the-team {
+		margin:  0;
+		padding: 0;
 		display: none;
 	}
 }
@@ -198,6 +306,10 @@ h1, h2, h3, h4, h5 {
 	 */
 	/*background-color: rgba(255, 165, 0, 0.65);*/
 /*}*/
+
+.zerogrid {
+	width: 100%;
+}
 
 .face {
 	display: block;
