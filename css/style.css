@@ -13,9 +13,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .wrapper {
-	/*background: url('../img/n4sjamk_background_pic.jpg');
-	background-position: center;
-	*/margin: 0;
+	margin:  0;
 	padding: 0;
 }
 
@@ -120,7 +118,7 @@ h1, h2, h3, h4, h5 {
 
 .project {
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 }
 .project-area {
 	background-color: white;
@@ -429,6 +427,7 @@ html {
 /* CONTACT */
 
 .contact {
+	background-color: #221a26;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -450,8 +449,7 @@ html {
 /* FOOTER */
 
 .footer {
-	padding-top: 8px;
-	text-align: center;
+	background-color: #221a26;
 }
 .footer p {
 	color: white;
