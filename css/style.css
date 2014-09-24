@@ -465,8 +465,9 @@ html {
 	line-height: 42px;
 	font-size: 26px;
 	color: white;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 100px 0;
+	magin: auto 60px;
+	border-bottom: 1px solid white;
 }
 .ourvision-text {
 	color: white;
@@ -474,31 +475,33 @@ html {
 
 /* CONTACT */
 
-.contact {
+.contact-wrapper {
 	background-color: #221a26;
-	padding-top: 20px;
-	padding-bottom: 20px;
+}
+.contact {
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .contact h3 {
 	font-size: 16px;
 	line-height: 14px;
+	color: white;
 }
 .contact p {
 	line-height: 12px;
 	font-size: 14px;
+	color: white;
 }
 .contact i {
 	padding-right: 5px;
+	color: white;
 }
 .contact a {
-	color: black;
+	color: white;
 }
 
 /* FOOTER */
 
-.footer {
-	background-color: #221a26;
-}
 .footer p {
 	color: white;
 }

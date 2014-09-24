@@ -1,62 +1,62 @@
 [
 	{
 		"full_name": "Heli Sutinen",
-		"title":     "UX / Graphics",
+		"title":     "Graphic Design",
 		"image":     "team_heli.jpg"
 	},
 	{
 		"full_name": "Henri Tervakoski",
-		"title":     "Core",
+		"title":     "Cloud infra, automation",
 		"image":     "team_henri.jpg"
 	},
 	{
 		"full_name": "Janne Alatalo",
-		"title":     "Core",
+		"title":     "TDD, automation",
 		"image":     "team_janne.jpg"
 	},
 	{
 		"full_name": "Jarmo Viinikanoja",
-		"title":     "Infra / Network",
+		"title":     "Network Specialist",
 		"image":     "team_jarmo.jpg"
 	},
 	{
 		"full_name": "Petri Matilainen",
-		"title":     "Test Automation",
+		"title":     "Test automation",
 		"image":     "team_petri.jpg"
 	},
 	{
 		"full_name": "Taneli Hartikainen",
-		"title":     "Backend",
+		"title":     "TDD, web development",
 		"image":     "team_taneli.jpg"
 	},
 	{
 		"full_name": "Marko Rintamäki",
-		"title":     "Project Management",
+		"title":     "Product owner",
 		"image":     "team_marko.jpg"
 	},
 	{
 		"full_name": "Jouni Huotari",
-		"title":     "Project Owner",
+		"title":     "Project manager",
 		"image":     "team_jouni.jpg"
 	},
 	{
 		"full_name": "Niko Korhonen",
-		"title":     "Test Automation",
+		"title":     "Test automation specialist",
 		"image":     "team_niko.jpg"
 	},
 	{
 		"full_name": "Paavo Nelimarkka",
-		"title":     "Project Management",
+		"title":     "Product Owner",
 		"image":     "team_paavo.jpg"
 	},
 	{
 		"full_name": "Tero Oinonen",
-		"title":     "Network Specialist",
+		"title":     "Cloud infra, automation",
 		"image":     "team_tero.jpg"
 	},
 	{
 		"full_name": "Teemu Laukka",
-		"title":     "Frontend",
+		"title":     "TDD, Unity",
 		"image":     "team_teemu.jpg"
 	}
 ]
