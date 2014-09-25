@@ -124,6 +124,11 @@ title: index page
                   <div class="experience-content">
                     {{experience.description}}
                     <br/><br/>
+            		{% if experience.link %}
+  				<div class="experience-link">
+    				<a href="{{experience.link}}">{{experience.link-description}}/a>
+  			</div>
+  			{% endif %}
                     <a href="{{experience.link}}">Teamboard</a>
                   </div>
                 </div>
