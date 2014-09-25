@@ -285,12 +285,23 @@ html {
 /** MEET THE TEAM */
 
 @media (max-width: 640px) {
-	#meet-the-team {
+	.display-big {
 		margin:  0;
 		padding: 0;
 		display: none;
 	}
+
+	.display-small .face-container {
+		width: 16.66666666% !important;
+	}
 }
+
+@media (min-width: 640px) {
+	.display-small {
+		display: none;
+	}
+}
+
 
 .face-container {
 	width:    100%;
@@ -310,8 +321,6 @@ html {
 
 	height:     0;
 	max-height: 0;
-
-	box-sizing: border-box;
 
 	color:       #FFF;
 	text-align:  center;
@@ -469,12 +478,13 @@ html {
 }
 .logo-container {
 	height: 110px;
+	text-align: center;
 }
 .partners {
 	padding-top: 10px;
 	padding-bottom: 30px;
 }
-#digile { padding-top: 15px; }
+
 /* VISION */
 
 .vision {

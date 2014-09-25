@@ -82,7 +82,19 @@ title: index page
   <!-- Meet the team -->
   <div id="meet-the-team">
     <div class="zerogrid full">
-      <div class="row">
+      <!-- SMALLER DEVICES -->
+
+      <div class="row display-small">
+        {% for member in site.data.members %}
+          <div class="col-1-6 face-container">
+            <img src="img/faces/{{member.image}}"
+              alt="{{member.full_name}}" class="face" />
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- BIGGER DEVICES -->
+      <div class="row display-big">
         {% for member in site.data.members %}
           <!-- Face -->
           <div class="col-1-4 face-container">
@@ -110,7 +122,11 @@ title: index page
         <div class="col-1-3 info">
           <div class="content">
             <p class="motto">We build experiences</p>
-            <p class="text"><i>Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba</i></p>
+            <p class="text">
+              <i>
+                Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba Yes we do ababab babababa yee bababa bababa yeeye bababbaba
+              </i>
+            </p>
           </div>
         </div>
         <div class="col-2-3">
