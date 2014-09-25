@@ -13,9 +13,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .wrapper {
-	background: url('../img/n4sjamk_background_pic.jpg');
-	background-position: center;
-	margin: 0;
+	margin:  0;
 	padding: 0;
 }
 
@@ -160,44 +158,155 @@ h1, h2, h3, h4, h5 {
 
 /* AGILE BY NATURE */
 
-.text-agile {
-	margin-top: 100px;
-	margin-bottom: 90px;
-	color: white;
-	font-size: 56px;
-	font-family: "Open Sans", sans-serif;
-	border-top: 5px solid orange;
-	padding-top: 15px;
-	width: 360px;
+
+/** DEFAULTS */
+
+html {
+	background: url('../img/n4sjamk_background_pic.jpg') no-repeat center center fixed;
+
+	background-size:         cover;
+	-webkit-background-size: cover;
 }
 
-/* FACE GRID */
+.full {
+	width: 100% !important;
+}
+
+.background {
+	background:          #FFF;
+	background-position: center;
+}
+
+.content {
+	padding-left:   64px;
+	padding-top:    32px;
+	padding-bottom: 64px;
+}
+
+.motto {
+	font-size:   56px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+	padding-left:  16px;
+	padding-right: 16px;
+
+	padding-top:    8px;
+	padding-bottom: 8px;
+
+	border:        2px solid #F75423;
+	border-radius: 4px;
+
+	color:           #F75423;
+	text-decoration: none;
+
+	transition:         background-color 0.2s linear;
+	-webkit-transition: background-color 0.2s linear;
+}
+
+.button:hover {
+	color:            #FFF;
+	background-color: #F75423;
+}
+
+/** MEET THE PROJECT */
+
+#meet-the-project {
+	height:           680px;
+	background-color: #FFF;
+
+	position: relative;
+}
+
+#meet-the-project .content {
+	width: 50%;
+}
+
+#meet-the-project .background {
+	height: 680px;
+	width: 35%;
+
+	background:      url('../img/about_picture.png');
+	background-size: cover;
+
+	position: absolute; top: 0; left: 65%;
+}
+
+@media (max-width: 980px) {
+	#meet-the-project .content {
+		width: 65%;
+	}
+
+	#meet-the-project .background {
+		left:  75%;
+		width: 25%;
+	}
+}
 
 @media (max-width: 640px) {
-	.face-grid {
+	#meet-the-project .col-1-2 {
+		width: 100%;
+	}
+
+	#meet-the-project .background {
 		display: none;
 	}
 }
+
+#meet-the-project .motto {
+	color: #F75423;
+}
+
+#meet-the-project .text {
+	color:         #4D4D4D;
+	margin-bottom: 48px;
+}
+
+#meet-the-project img {
+	display: block;
+
+	width:     100%;
+	max-width: 100%;
+
+	height: auto;
+}
+
+/** AGILE MANIFEST */
+
+#agile-by-nature {
+	background: transparent;
+}
+
+#agile-by-nature .motto {
+	color: white;
+}
+
+/** MEET THE TEAM */
+
+@media (max-width: 640px) {
+	.display-big {
+		margin:  0;
+		padding: 0;
+		display: none;
+	}
+
+	.display-small .face-container {
+		width: 16.66666666% !important;
+	}
+}
+
+@media (min-width: 640px) {
+	.display-small {
+		display: none;
+	}
+}
+
 
 .face-container {
 	width:    100%;
 	position: relative;
 }
-/*
-.face-container-hover > .face {
-	-webkit-filter: blur(4px);
-	-moz-filter:    blur(4px);
-	filter:         blur(4px);
-}*/
-
-/*.face-container-hover > .face-content {
-	opacity: 1.0;*/
-	/*
-		If you want a background-color for the blurred image,
-		uncomment the following line and set the color as you need.
-	 */
-	/*background-color: rgba(255, 165, 0, 0.65);*/
-/*}*/
 
 .face {
 	display: block;
@@ -212,8 +321,6 @@ h1, h2, h3, h4, h5 {
 
 	height:     0;
 	max-height: 0;
-
-	box-sizing: border-box;
 
 	color:       #FFF;
 	text-align:  center;
@@ -240,6 +347,84 @@ h1, h2, h3, h4, h5 {
 
 .face-card-title {
 	margin-bottom: 8px;
+}
+
+/** BUILD EXPERIENCES */
+
+#build-experiences {
+	padding-top:      48px;
+	padding-bottom:   64px;
+	background-color: #FFF;
+}
+
+#build-experiences .info {
+	margin: 0 auto;
+}
+
+@media (max-width: 980px) {
+	#build-experiences .info {
+		width: 100%;
+	}
+
+	#build-experiences .info .content {
+		padding-bottom: 16px;
+		text-align: center;
+	}
+
+	#build-experiences .info .text {
+		display: none;
+	}
+
+	#build-experiences .col-2-3 {
+		width: 100%;
+	}
+}
+
+#build-experiences .info .content {
+	padding-left:  32px;
+	padding-right: 32px;
+}
+
+#build-experiences .info .motto {
+	width:         80%;
+	margin:        0 auto;
+	margin-bottom: 16px;
+
+	font-size: 38px;
+}
+
+#build-experiences .info .text {
+	width:  80%;
+	margin: 0 auto;
+}
+
+#build-experiences .experiences .content {
+	font-family: 'Source Sans Pro', sans-serif;
+
+	padding-left:   32px;
+	padding-right:  32px;
+	padding-bottom: 16px;
+
+	width:  80%;
+	margin: 0 auto;
+}
+
+#build-experiences .experience-title {
+	color:         #F75423;
+	font-size:     32px;
+	margin-bottom: 8px;
+}
+
+/** SUPPORTED BY */
+
+#supported-by .motto {
+	color: #FFF;
+}
+
+/** MEET THE PARTNERS */
+
+#meet-the-partners {
+	background-color: #FFF;
 }
 
 /* TEAM */
@@ -282,7 +467,6 @@ h1, h2, h3, h4, h5 {
 	margin-bottom: 90px;
 	color: white;
 	font-size: 56px;
-	border-top: 5px solid orange;
 	padding-top: 15px;
 	width: 330px;
 }
@@ -294,12 +478,13 @@ h1, h2, h3, h4, h5 {
 }
 .logo-container {
 	height: 110px;
+	text-align: center;
 }
 .partners {
 	padding-top: 10px;
 	padding-bottom: 30px;
 }
-#digile { padding-top: 15px; }
+
 /* VISION */
 
 .vision {
