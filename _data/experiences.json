@@ -1,7 +1,8 @@
 [
 	{
 		"title":       "Teamboard",
-		"description": "Teamboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate."
+		"description": "Teamboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate.",
+		"link": "./teamboard"
 	},
 	{
 		"title":       "TOAS Debian Packaging",
