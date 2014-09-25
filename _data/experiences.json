@@ -1,14 +1,20 @@
 [
 	{
 		"title":       "Teamboard",
-		"description": "Teamboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate."
+		"description": "Teamboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate.",
+		"link": "./teamboard",
+		"link-description": "Teamboard"
 	},
 	{
 		"title":       "TOAS Debian Packaging",
-		"description": "The repository enables open source community to install and deploy Tieto Open Application Suite for Ubuntu Linux."
+		"description": "The repository enables open source community to install and deploy Tieto Open Application Suite for Ubuntu Linux.",
+		"link": "",
+		"link-description": ""
 	},
 	{
 		"title":       "Unity Mocks",
-		"description": "Simulation of prototypes in a natural environment using Unity3D as the rendering engine."
+		"description": "Simulation of prototypes in a natural environment using Unity3D as the rendering engine.",
+		"link": "",
+		"link-description": ""
 	}
 ]
