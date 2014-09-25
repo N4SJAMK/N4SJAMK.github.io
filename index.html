@@ -138,12 +138,11 @@ title: index page
                   <div class="experience-content">
                     {{experience.description}}
                     <br/><br/>
-                    <div>
-	    		{% for link in experience.links  %}
-	  			<div class="experience-link">
-	    				<a href="{{link.href}}">{{link.name}}</a>
-	    			</div>
-	 		{% endfor %}
+	    	    {% for link in experience.links  %}
+	  	      <div class="experience-link">
+	   		<a href="{{link.href}}">{{link.name}}</a>
+	    	      </div>
+	 	    {% endfor %}
 	 	    </div>
                 </div>
               </div>
