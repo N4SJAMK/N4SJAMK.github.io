@@ -13,7 +13,7 @@
 		},
 		{
 			"name": "Try out demo",
-			"href": "http://teamboard.n4sjamk.org"
+			"href": "https://teamboard.n4sjamk.org"
 		}
 		
 	]
@@ -22,13 +22,22 @@
 	{
 		"title":       "TOAS Debian Packaging",
 		"description": "The repository enables open source community to install and deploy Tieto Open Application Suite for Ubuntu Linux.",
-		"link": "",
-		"link-description": ""
+		"links": [
+		{
+			"name": "TOAS packaging",
+			"href": "https://www.dropbox.com/s/obnz9skqf2wsby6/N4STOASposter.pdf?dl=0"
+		}
+		
+	]
 	},
 	{
 		"title":       "Unity Mocks",
 		"description": "Simulation of prototypes in a natural environment using Unity3D as the rendering engine.",
-		"link": "",
-		"link-description": ""
+		"links": [
+		{
+			"name": "Unity video",
+			"href": "https://www.youtube.com/watch?v=jvpoDnsj280&feature=youtu.be"
+		}
+	]
 	}
 ]
