@@ -1,14 +1,14 @@
 [
 	{
-		"title":       "Teamboard",
-		"description": "Teamboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate.",
+		"title":       "Contriboard",
+		"description": "Contriboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate.",
 		"links": [
 		{
-			"name": "Teamboard Intro",
+			"name": "Contriboard Intro",
 			"href": "./teamboard"
 		},
 		{
-			"name": "Teamboard Wiki",
+			"name": "Contriboard Wiki",
 			"href": "http://github.com/N4SJAMK/teamboard-meta/wiki"
 		},
 		{
