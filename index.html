@@ -18,6 +18,47 @@ title: index page
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/jquery.tap.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script src="js/jquery-scrolltofixed.js" type="text/javascript"></script>
+	<script>
+  // apparently there is jQuery in this site, I take no responsibility.
+
+  // basic hover effects
+  $('.face-container').on('mouseenter', function(ev) {
+    $(ev.currentTarget).addClass('face-container-hover');
+  });
+  $('.face-container').on('mouseleave', function(ev) {
+    $(ev.currentTarget).removeClass('face-container-hover');
+  });
+
+  // prevent 'ghost'-clicks
+
+  var lastTapTime = null;
+
+  function isGhost() {
+    var ghostTime      = 200;
+    var currentTapTime = new Date().getTime();
+
+    if(lastTapTime == null || currentTapTime > (lastTapTime + ghostTime)) {
+      lastTapTime = currentTapTime;
+
+      console.log('no ghost');
+      return false;
+    }
+    return true;
+  }
+
+  // add hover effects also on click
+  $('.face-container').on('tap', function(ev) {
+    if(isGhost()) return false;
+
+    if( $(ev.currentTarget).hasClass('face-container-hover') ) {
+      return $(ev.currentTarget).removeClass('face-container-hover');
+    }
+    return $(ev.currentTarget).addClass('face-container-hover');
+  });
+
+</script>
 
 </head>
 <body>
@@ -217,50 +258,6 @@ title: index page
     </div>
   </footer>
 </div>
-
-
-<script type="text/javascript" src="js/smoothscroll.js"></script>
-<script src="js/jquery-scrolltofixed.js" type="text/javascript"></script>
-
-<script>
-  // apparently there is jQuery in this site, I take no responsibility.
-
-  // basic hover effects
-  $('.face-container').on('mouseenter', function(ev) {
-    $(ev.currentTarget).addClass('face-container-hover');
-  });
-  $('.face-container').on('mouseleave', function(ev) {
-    $(ev.currentTarget).removeClass('face-container-hover');
-  });
-
-  // prevent 'ghost'-clicks
-
-  var lastTapTime = null;
-
-  function isGhost() {
-    var ghostTime      = 200;
-    var currentTapTime = new Date().getTime();
-
-    if(lastTapTime == null || currentTapTime > (lastTapTime + ghostTime)) {
-      lastTapTime = currentTapTime;
-
-      console.log('no ghost');
-      return false;
-    }
-    return true;
-  }
-
-  // add hover effects also on click
-  $('.face-container').on('tap', function(ev) {
-    if(isGhost()) return false;
-
-    if( $(ev.currentTarget).hasClass('face-container-hover') ) {
-      return $(ev.currentTarget).removeClass('face-container-hover');
-    }
-    return $(ev.currentTarget).addClass('face-container-hover');
-  });
-
-</script>
 
 </body>
 </html>
