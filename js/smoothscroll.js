@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+
+
+ 
  /* functions for changing offset */
  
 // initial setup 
@@ -66,3 +70,5 @@ if(mq.matches) {
 
 	// Initialize all .smoothScroll links
 	jQuery(function($){ $.localScroll({filter:'.smoothScroll'}); });
+	
+}); 
