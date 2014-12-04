@@ -4,16 +4,12 @@
 		"description": "Contriboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate.",
 		"links": [
 		{
-			"name": "Contriboard Intro",
+			"name": "Contriboard",
 			"href": "./contriboard"
 		},
 		{
 			"name": "Contriboard Wiki",
 			"href": "http://github.com/N4SJAMK/teamboard-meta/wiki"
-		},
-		{
-			"name": "Try out demo",
-			"href": "http://teamboard.n4sjamk.org"
 		}
 		
 	]
