@@ -21,41 +21,42 @@ title: index page
   <script type="text/javascript" src="js/smoothscroll.js"></script>
 	<script src="js/jquery-scrolltofixed.js" type="text/javascript"></script>
 	<script>
-  // apparently there is jQuery in this site, I take no responsibility.
+  $(window).load(function() {
 
-  // basic hover effects
-  $('.face-container').on('mouseenter', function(ev) {
-    $(ev.currentTarget).addClass('face-container-hover');
-  });
-  $('.face-container').on('mouseleave', function(ev) {
-    $(ev.currentTarget).removeClass('face-container-hover');
-  });
+    // basic hover effects
+    $('.face-container').on('mouseenter', function(ev) {
+      $(ev.currentTarget).addClass('face-container-hover');
+    });
+    $('.face-container').on('mouseleave', function(ev) {
+      $(ev.currentTarget).removeClass('face-container-hover');
+    });
 
-  // prevent 'ghost'-clicks
+    // prevent 'ghost'-clicks
 
-  var lastTapTime = null;
+    var lastTapTime = null;
 
-  function isGhost() {
-    var ghostTime      = 200;
-    var currentTapTime = new Date().getTime();
+    function isGhost() {
+      var ghostTime = 200;
+      var currentTapTime = new Date().getTime();
 
-    if(lastTapTime == null || currentTapTime > (lastTapTime + ghostTime)) {
-      lastTapTime = currentTapTime;
+      if(lastTapTime == null || currentTapTime > (lastTapTime + ghostTime)) {
+        lastTapTime = currentTapTime;
+        return false;
+      }
 
-      console.log('no ghost');
-      return false;
+      return true;
     }
-    return true;
-  }
 
-  // add hover effects also on click
-  $('.face-container').on('tap', function(ev) {
-    if(isGhost()) return false;
+    // add hover effects also on click
+    $('.face-container').on('tap', function(ev) {
+      if(isGhost()) return false;
 
-    if( $(ev.currentTarget).hasClass('face-container-hover') ) {
-      return $(ev.currentTarget).removeClass('face-container-hover');
-    }
-    return $(ev.currentTarget).addClass('face-container-hover');
+      if( $(ev.currentTarget).hasClass('face-container-hover') ) {
+        return $(ev.currentTarget).removeClass('face-container-hover');
+      }
+
+      return $(ev.currentTarget).addClass('face-container-hover');
+    });
   });
 
 </script>

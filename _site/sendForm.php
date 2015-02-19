@@ -25,7 +25,7 @@ if(isset($_POST['submit'])) {
 			// check if the email address is valid
 			$mailcheck = spamcheck($_POST['email']);
 			if($mailcheck == FALSE) {
-				echo "Invalid input";	
+				echo "Invalid input";
 			} else {
 				$from = $_POST['email'];
 				$subject = "N4S@JAMK Feedback";

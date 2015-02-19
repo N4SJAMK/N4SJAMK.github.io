@@ -66,3 +66,4 @@ if(mq.matches) {
 
 	// Initialize all .smoothScroll links
 	jQuery(function($){ $.localScroll({filter:'.smoothScroll'}); });
+	
