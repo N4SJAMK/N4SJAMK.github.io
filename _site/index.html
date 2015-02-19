@@ -53,14 +53,15 @@
 
       return $(ev.currentTarget).addClass('face-container-hover');
     });
+
+    // Keep copyright up to date
+    var currentYear = new Date().getFullYear();
+    var copyrightText = '\u00A9N4S@JAMK ' + currentYear + '. All rights reserved.';
+    $('#copyright').text(copyrightText);
   });
-
 </script>
-
-
 </head>
 <body>
-
 <div class="wrapper" id="top">
 
 	<nav class="nav" id="nav">
@@ -520,7 +521,7 @@
   <footer class="zerogrid row footer">
     <div class="col-1-3">
       <div class="wrap-col">
-        <p>&copy;N4S@JAMK 2014. All rights reserved.</p>
+        <p id="copyright"></p>
       </div>
     </div>
   </footer>
