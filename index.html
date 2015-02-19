@@ -165,10 +165,8 @@ title: index page
       <div class="row">
         <div class="col-1-3 info">
           <div class="content">
-            <p class="motto">We build experiences</p>
-
-            <p class="text"><i>Yes, we build products and experiences. Here is collection of works done with N4S@JAMK and Summer Factory 2014 teams during the N4S-Program.</i></p>
-
+            <p class="motto">{{site.data.motto.title}}</p>
+            <p class="text"><i>{{site.data.motto.content}}</i><p>
           </div>
         </div>
         <div class="col-2-3">
@@ -232,18 +230,18 @@ title: index page
 <div class="contact-wrapper">
   <div class="zerogrid row vision">
     <div class="wrap-col">
-      <p class="ourvision-text">We are looking for talents all the time. If you have the urge to stay on top of the IT evolution, we would like to hear from you. And if you just want to come and say hello, we are in with that also. Let's improve the process of software delivery together. We have coffee, you can bring some korvapuusti!</p>
+      <p class="ourvision-text">{{site.data.vision.content}}</p>
     </div>
   </div>
 
   <div class="zerogrid row contact" id="contact">
     <div class="col-1-3">
       <div class="wrap-col">
-      	<h3>Contact</h3>
-        <p>n4sjamk[at]gmail.com</p>
-        <p>Piippukatu 2</p>
-        <p>40100 Jyvaskyla</p>
-        <p>Finland</p>
+        <h3>{{site.data.contact_info.title}}</h3>
+        <p>{{site.data.contact_info.email}}</p>
+        <p>{{site.data.conatct_info.address}}</p>
+        <p>{{site.data.contact_info.postal_code}}</p>
+        <p>{{site.data.contact_info.country}}</p>
       </div>
     </div>
     <div class="col-1-3">
