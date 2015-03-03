@@ -3,7 +3,7 @@ title: index page
 ---
 
 <!doctype html>
-<html>
+<html class="main-bg">
   <head>
   <title>N4S@JAMK | Home </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -78,8 +78,9 @@ title: index page
           <li><a href="#meet-the-project" class="smoothScroll">PROJECT</a></li>
           <li><a href="#meet-the-team" class="smoothScroll">TEAM</a></li>
           <li><a href="#build-experiences" class="smoothScroll">WORKS</a></li>
-          <li><a href="#meet-the-partners" class="smoothScroll">PARTNERS</a></li>
-          <li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+          <li><a href="#supported-by" class="smoothScroll">PARTNERS</a></li>
+          <li><a href="#contact-info" class="smoothScroll">CONTACT</a></li>
+          <li><a href="challenge-factory.html">CHALLENGE FACTORY</a></li>
         </ul>
       </div>
     </div>
@@ -101,7 +102,7 @@ title: index page
     <div class="zerogrid">
       <div class="row">
           <div class="content">
-            <p class="motto">{{site.data.meet_the_project.title}}</h1>
+            <p class="motto">{{site.data.meet_the_project.title}}</p>
             <p class="text">{{site.data.meet_the_project.content}}</p>
             <a class="button" href="http://www.n4s.fi/en/">More About N4S</a>
           </div>
@@ -110,8 +111,8 @@ title: index page
     <div class="background"></div>
   </div>
 
-  <!-- Agile by nature -->
-  <div id="agile-by-nature">
+  <!-- Meet the team -->
+  <div id="meet-the-team">
     <div class="zerogrid">
       <div class="row">
         <div class="col-1">
@@ -123,11 +124,10 @@ title: index page
     </div>
   </div>
 
-  <!-- Meet the team -->
-  <div id="meet-the-team">
+  <div>
     <div class="zerogrid full">
-      <!-- SMALLER DEVICES -->
 
+      <!-- SMALLER DEVICES -->
       <div class="row display-small">
         {% for member in site.data.members %}
           <div class="col-1-6 face-container">
@@ -227,14 +227,14 @@ title: index page
     </div>
   </div>
 
-<div class="contact-wrapper">
+<div id="contact-info" class="contact-wrapper">
   <div class="zerogrid row vision">
     <div class="wrap-col">
       <p class="ourvision-text">{{site.data.vision.content}}</p>
     </div>
   </div>
 
-  <div class="zerogrid row contact" id="contact">
+  <div class="zerogrid row contact">
     <div class="col-1-3">
       <div class="wrap-col">
         <h3>{{site.data.contact_info.title}}</h3>
@@ -247,7 +247,9 @@ title: index page
     <div class="col-1-3">
       <div class="wrap-col">
         <h3>Find us</h3>
-        <p><a href="http://twitter.com/n4sjamk"><i class="fa fa-twitter-square fa-3x twitter"></i></a><a href="http://github.com/N4SJAMK"><i class="fa fa-github-square fa-3x"></i></a>
+        <p>
+          <a href="http://twitter.com/n4sjamk"><i class="fa fa-twitter-square fa-3x twitter"></i></a>
+          <a href="http://github.com/N4SJAMK"><i class="fa fa-github-square fa-3x"></i></a>
       </div>
     </div>
   </div>

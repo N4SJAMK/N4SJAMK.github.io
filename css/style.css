@@ -162,10 +162,16 @@ h1, h2, h3, h4, h5 {
 /** DEFAULTS */
 
 html {
-	background: url('../img/n4sjamk_background_pic.jpg') no-repeat center center fixed;
-
 	background-size:         cover;
 	-webkit-background-size: cover;
+}
+
+html.main-bg {
+	background: url('../img/n4sjamk_background_pic.jpg') no-repeat center center fixed;
+}
+
+html.challenge-bg {
+	background: url('../img/challenge_factory.jpg') no-repeat center center fixed;
 }
 
 .full {
@@ -189,11 +195,15 @@ html {
 }
 
 .button {
-	padding-left:  16px;
-	padding-right: 16px;
+	display: inline-block;
 
-	padding-top:    8px;
-	padding-bottom: 8px;
+	font-size: 24px;
+
+	padding-left:  20px;
+	padding-right: 20px;
+
+	padding-top:    12px;
+	padding-bottom: 12px;
 
 	border:        2px solid #F75423;
 	border-radius: 4px;
@@ -274,11 +284,12 @@ html {
 
 /** AGILE MANIFEST */
 
-#agile-by-nature {
+/*#agile-by-nature {*/
+#meet-the-team {
 	background: transparent;
 }
 
-#agile-by-nature .motto {
+#meet-the-team .motto {
 	color: white;
 }
 
@@ -505,6 +516,7 @@ html {
 
 .contact-wrapper {
 	background-color: #221a26;
+	padding-bottom: 32px;
 }
 .contact {
 	padding-top: 30px;
@@ -532,6 +544,41 @@ html {
 
 .footer p {
 	color: white;
+}
+
+/* CHALLENGE */
+.content-left {
+	float: left;
+	/*padding: 64px 32px 32px 64px;*/
+}
+
+.content-right {
+	margin-left: 786px;
+	/*padding: 64px 64px 32px 32px;*/
+}
+
+.challenge-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 40px;
+	color: #F75423;
+	margin-bottom 8px;
+}
+
+.content-block {
+	overflow: auto;
+	height: 100%;
+	background-color: #FFF;
+	padding: 72px;
+}
+
+.text-block {
+	margin-top: 12px;
+	margin-bottom: 24px;
+}
+
+.img-responsive {
+	max-width: 100%;
+	height: auto;
 }
 
 /* MEDIA QUERIES */
