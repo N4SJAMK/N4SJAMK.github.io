@@ -78,8 +78,8 @@ title: index page
           <li><a href="#meet-the-project" class="smoothScroll">PROJECT</a></li>
           <li><a href="#meet-the-team" class="smoothScroll">TEAM</a></li>
           <li><a href="#build-experiences" class="smoothScroll">WORKS</a></li>
-          <li><a href="#meet-the-partners" class="smoothScroll">PARTNERS</a></li>
-          <li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+          <li><a href="#supported-by" class="smoothScroll">PARTNERS</a></li>
+          <li><a href="#contact-info" class="smoothScroll">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -110,8 +110,8 @@ title: index page
     <div class="background"></div>
   </div>
 
-  <!-- Agile by nature -->
-  <div id="agile-by-nature">
+  <!-- Meet the team -->
+  <div id="meet-the-team">
     <div class="zerogrid">
       <div class="row">
         <div class="col-1">
@@ -123,11 +123,10 @@ title: index page
     </div>
   </div>
 
-  <!-- Meet the team -->
-  <div id="meet-the-team">
+  <div>
     <div class="zerogrid full">
-      <!-- SMALLER DEVICES -->
 
+      <!-- SMALLER DEVICES -->
       <div class="row display-small">
         {% for member in site.data.members %}
           <div class="col-1-6 face-container">
@@ -227,14 +226,14 @@ title: index page
     </div>
   </div>
 
-<div class="contact-wrapper">
+<div id="contact-info" class="contact-wrapper">
   <div class="zerogrid row vision">
     <div class="wrap-col">
       <p class="ourvision-text">{{site.data.vision.content}}</p>
     </div>
   </div>
 
-  <div class="zerogrid row contact" id="contact">
+  <div class="zerogrid row contact">
     <div class="col-1-3">
       <div class="wrap-col">
         <h3>{{site.data.contact_info.title}}</h3>

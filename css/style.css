@@ -274,11 +274,12 @@ html {
 
 /** AGILE MANIFEST */
 
-#agile-by-nature {
+/*#agile-by-nature {*/
+#meet-the-team {
 	background: transparent;
 }
 
-#agile-by-nature .motto {
+#meet-the-team .motto {
 	color: white;
 }
 
