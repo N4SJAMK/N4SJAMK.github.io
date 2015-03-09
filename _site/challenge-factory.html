@@ -7,6 +7,7 @@
 
   <link href="css/zerogrid.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
@@ -14,7 +15,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/jquery.tap.js"></script>
-  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/responsive-nav.js"></script>
   <script src="js/jquery-scrolltofixed.js" type="text/javascript"></script>
   <script>
   $(window).load(function() {
@@ -26,7 +27,7 @@
 </script>
 </head>
 <body>
-<div class="wrapper" id="top">
+<!-- <div class="wrapper" id="top">
   <nav class="nav" id="nav">
     <div class="zerogrid row">
       <div class="cols-1-3">
@@ -45,6 +46,22 @@
     </div>
   </nav>
 </div>
+ -->
+<!-- Navbar -->
+<header>
+  <!-- <a href="#home" class="logo" data-scroll>Fixed Nav</a> -->
+  <a href="#top" class="smoothScroll" data-scroll><img src="img/n4sjamk_logo_notext.svg" class="logo" /></a>
+  <nav class="nav-collapse">
+    <ul>
+      <li><a href="index.html" data-scroll>PROJECT</a></li>
+      <li><a href="index.html" data-scroll>TEAM</a></li>
+      <li><a href="index.html" data-scroll>WORKS</a></li>
+      <li><a href="index.html" data-scroll>PARTNERS</a></li>
+      <li><a href="index.html" data-scroll>CONTACT</a></li>
+      <li><a href="challenge-factory.html" data-scroll>CHALLENGE FACTORY</a></li>
+    </ul>
+  </nav>
+</header>
 
 <div class="zerogrid row transparent top">
     <div class="col-1-2">
@@ -58,11 +75,21 @@
 
 <!-- Learning together -->
 <div class="content-block">
-  <div class="content-left"><img src="img/challenge_factory_wheel.png" class="img-responsive"></div>
-  <div class="content-right">
-    <div class="challenge-title">Learning together</div>
-    <p class="text-block">Challenge Factory is a concept for working as a summer trainee for the N4S Project in JAMK University of Applied Sciences. As a Challenge Factory member you get to work with N4S@JAMK team. N4S@JAMK team acts as mentors within Challenge Factory and gives several challenges to seize with modern working methods. LEAN Startup Methodolody, MVP, QA, Test Automation, CI and CD, Service Design, UX... did we get you interested? Send us an email!</p>
-    <a class="button" href="https://www.youtube.com/watch?v=f0qgAVm8Wxk&feature=youtu.be">Watch the video</a>
+  <div class="zerogrid">
+    <div class="row">
+      <div class="col-2-3">
+        <div class="wrap-col">
+          <img src="img/challenge_factory_wheel.png" class="img-responsive">
+        </div>
+      </div>
+      <div class="col-1-3">
+        <div clasS="wrap-col">
+          <div class="challenge-title">Learning together</div>
+          <p class="text-block">Challenge Factory is a concept for working as a summer trainee for the N4S Project in JAMK University of Applied Sciences. As a Challenge Factory member you get to work with N4S@JAMK team. N4S@JAMK team acts as mentors within Challenge Factory and gives several challenges to seize with modern working methods. LEAN Startup Methodolody, MVP, QA, Test Automation, CI and CD, Service Design, UX... did we get you interested? Send us an email!</p>
+          <a class="button" href="https://www.youtube.com/watch?v=f0qgAVm8Wxk&feature=youtu.be">Watch the video</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -100,6 +127,10 @@
     </div>
   </footer>
 </div>
+
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/fixed-responsive-nav.js"></script>
 
 </body>
 </html>

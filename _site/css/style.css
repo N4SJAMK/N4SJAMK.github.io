@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5 {
 
 /* HEADER */
 
-.logo {
+/*.logo {
 	min-height: 50px;
 	min-width: 50px;
 	max-height: 100px;
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 15px;
 	padding-left: 10px;
 	float: left;
-}
+}*/
 
 .transparent {
 	background: transparent;
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5 {
 .collapse {
 	color: transparent;
 }
-.nav {
+/*.nav {
 	background-color: #221a26;
 	height: 80px;
 	position: fixed;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5 {
 .nav ul li a:hover {
 	color: #F75423;
 	font-weight:200;
-}
+}*/
 
 /* CHALLENCING VISIONS -PART */
 
@@ -167,7 +167,7 @@ html {
 }
 
 html.main-bg {
-	background: url('../img/n4sjamk_background_pic.jpg') no-repeat center center fixed;
+	background: url('../img/n4sjamk_homepage_image.jpg') no-repeat center center fixed;
 }
 
 html.challenge-bg {
@@ -547,16 +547,6 @@ html.challenge-bg {
 }
 
 /* CHALLENGE */
-.content-left {
-	float: left;
-	/*padding: 64px 32px 32px 64px;*/
-}
-
-.content-right {
-	margin-left: 786px;
-	/*padding: 64px 64px 32px 32px;*/
-}
-
 .challenge-title {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 40px;
@@ -565,10 +555,9 @@ html.challenge-bg {
 }
 
 .content-block {
-	overflow: auto;
-	height: 100%;
+	padding-top: 64px;
+	padding-bottom: 64px;
 	background-color: #FFF;
-	padding: 72px;
 }
 
 .text-block {
@@ -584,7 +573,7 @@ html.challenge-bg {
 /* MEDIA QUERIES */
 
 @media (max-width: 640px) {
-	.logo {
+	/*.logo {
 		display: none;
 	}
 	.nav {
@@ -600,7 +589,7 @@ html.challenge-bg {
 	.nav ul li a {
 		padding: 0px 5px;
 		font-size: 10px;
-	}
+	}*/
 
 	.top {
 		padding-top: 100px;
