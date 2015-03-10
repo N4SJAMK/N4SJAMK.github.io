@@ -2,7 +2,7 @@
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
 
-.nav-collapse ul {
+/*.nav-collapse ul {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -52,13 +52,13 @@
   .nav-toggle {
     display: none;
   }
-}
+}*/
 
 /* ------------------------------------------
   MASK
 --------------------------------------------- */
 
-.mask {
+/*.mask {
   -webkit-transition: opacity 300ms;
   -moz-transition: opacity 300ms;
   transition: opacity 300ms;
@@ -88,7 +88,7 @@
 	display: none !important;
 	opacity: 0 !important;
   }
-}
+}*/
 
 /* ------------------------------------------
   NAVIGATION STYLES
@@ -103,12 +103,12 @@ header {
   top: 0;
 }
 
-.fixed {
+/*.fixed {
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
-}
+}*/
 
 .logo {
   max-height: 100px;
@@ -117,6 +117,84 @@ header {
   float: left;
 }
 
+/*--------------------------------------*/
+
+.nav-collapse,
+.nav-collapse * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Desktop */
+@media screen and (min-width: 641px) {
+  .nav-collapse {
+
+  }
+}
+
+/* Mobile */
+.nav-collapse ul {
+  font-size: 14px;
+}
+
+/* Desktop */
+@media screen and (min-width: 641px) {
+  .nav-collapse ul {
+
+  }
+}
+
+/* Mobile */
+.nav-collapse li {
+
+}
+
+/* Desktop */
+@media screen and (min-width: 641px) {
+  .nav-collapse li {
+    /*display: inline;*/
+    line-height: 82px;
+  }
+}
+
+/*.nav-container {
+  float: right;
+}*/
+
+/* Mobile */
+.nav-collapse a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  text-decoration: none;
+  color: #CCCCCC;
+}
+
+/* Desktop */
+@media screen and (min-width: 641px) {
+  .nav-collapse a {
+    float: left;
+    padding: 0 24px 0 24px;
+  }
+}
+
+.nav-collapse a:active,
+.nav-collapse .active a {
+  color: #F75423;
+}
+
+.nav-collapse a:hover {
+  color: #F75423;
+}
+
+/*--------------------------------------*/
+
+
+
+
+
+
+
+/*
 .nav-collapse,
 .nav-collapse * {
   -webkit-box-sizing: border-box;
@@ -186,7 +264,7 @@ header {
   .nav-collapse ul ul a {
     display: none;
   }
-}
+}*/
 
 /* ------------------------------------------
   NAV TOGGLE STYLES
@@ -222,7 +300,7 @@ header {
 
 .nav-toggle.active:before {
   font-size: 32px;
-  content: "\f00d"; /* Close icon */
+  content: "\f00d";
 }
 
 .challenge-link {

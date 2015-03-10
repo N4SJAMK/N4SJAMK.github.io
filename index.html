@@ -11,16 +11,25 @@ title: index page
 
   <link href="css/zerogrid.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive-nav.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <!-- <link rel="stylesheet" href="css/slicknav.css" /> -->
+  <link rel="stylesheet" href="css/responsive-nav.css" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="js/responsive-nav.js"></script>
+  <!--<script type="text/javascript" src="js/responsive-nav.js"></script>-->
+  <!-- <script type="text/javascript" src="js/scroll.js"></script> -->
+  <!--<script type="text/javascript" src="js/jquery.slicknav.min.js"></script> -->
+  <script type="text/javascript" src="js/responsive-nav.min.js"></script>
 	<script>
   $(window).load(function() {
+
+    // $('#menu').slicknav();
+    responsiveNav('.nav-collapse');
 
     // basic hover effects
     $('.face-container').on('mouseenter', function(ev) {
@@ -87,18 +96,34 @@ title: index page
 
   <header>
     <a href="#top" class="smoothScroll" data-scroll><img src="img/n4sjamk_logo_notext.svg" class="logo" /></a>
+    <div class="nav-container">
     <nav class="nav-collapse">
       <ul>
-        <li clas="menu-item"><a href="#meet-the-project" data-scroll>PROJECT</a></li>
-        <li clas="menu-item"><a href="#meet-the-team" data-scroll>TEAM</a></li>
-        <li clas="menu-item"><a href="#build-experiences" data-scroll>WORKS</a></li>
-        <li clas="menu-item"><a href="#supported-by" data-scroll>PARTNERS</a></li>
-        <li clas="menu-item"><a href="#contact-info" data-scroll>CONTACT</a></li>
-        <!-- <li clas="menu-item"><a href="#challenge-factory" data-scroll>CHALLENGE FACTORY</a></li> -->
+        <li clas="menu-item"><a href="#meet-the-project">PROJECT</a></li>
+        <li clas="menu-item"><a href="#meet-the-team">TEAM</a></li>
+        <li clas="menu-item"><a href="#build-experiences">WORKS</a></li>
+        <li clas="menu-item"><a href="#supported-by">PARTNERS</a></li>
+        <li clas="menu-item"><a href="#contact-info">CONTACT</a></li>
+        <li clas="menu-item"><a href="challenge-factory.html">CHALLENGE FACTORY</a></li>
       </ul>
       <!-- <span class="challenge-link"><a href="challenge-factory.html">CHALLENGE FACTORY</a></span> -->
     </nav>
+    </div>
   </header>
+
+  <!-- <header>
+    <a href="#top" class="smoothScroll"><img src="img/n4sjamk_logo_notext.svg" class="logo" /></a>
+    <nav class="nav-collapse navigation">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#meet-the-project">PROJECT</a></li>
+        <li class="nav-item"><a href="#meet-the-team">TEAM</a></li>
+        <li class="nav-item"><a href="#build-experiences">WORKS</a></li>
+        <li class="nav-item"><a href="#supported-by">PARTNERS</a></li>
+        <li class="nav-item"><a href="#contact-info">CONTACT</a></li>
+        <li class="nav-item"><a href="challenge-factory.html" data-scroll>CHALLENGE FACTORY</a></li>
+      </ul>
+    </nav>
+  </header> -->
 
   <div class="zerogrid row transparent top">
     <div class="col-1-2">
@@ -276,9 +301,10 @@ title: index page
   </footer>
 </div>
 
-<script type="text/javascript" src="js/fastclick.js"></script>
+<!-- <script type="text/javascript" src="js/fastclick.js"></script> -->
 <script type="text/javascript" src="js/scroll.js"></script>
-<script type="text/javascript" src="js/fixed-responsive-nav.js"></script>
+<!-- <script type="text/javascript" src="js/fixed-responsive-nav.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.slicknav.min.js"></script> -->
 
 </body>
 </html>
