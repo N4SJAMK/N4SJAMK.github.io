@@ -42,15 +42,15 @@
   user-select: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 641px) {
   .js .nav-collapse {
-	position: relative;
+    position: relative;
   }
   .js .nav-collapse.closed {
-	max-height: none;
+    max-height: none;
   }
   .nav-toggle {
-	display: none;
+    display: none;
   }
 }
 
@@ -83,7 +83,7 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 641px) {
   .mask {
 	display: none !important;
 	opacity: 0 !important;
@@ -133,7 +133,7 @@ header {
   float: left;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 641px) {
   .nav-collapse {
     float: right;
     width: auto;
@@ -145,7 +145,7 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 641px) {
   .nav-collapse li {
     height: 82px;
     width: auto;
@@ -170,7 +170,7 @@ header {
   color: #F75423;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 641px) {
   .nav-collapse a {
     text-align: center;
     border-top: 0;
@@ -182,7 +182,7 @@ header {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 641px) {
   .nav-collapse ul ul a {
     display: none;
   }
@@ -223,4 +223,8 @@ header {
 .nav-toggle.active:before {
   font-size: 32px;
   content: "\f00d"; /* Close icon */
+}
+
+.challenge-link {
+  display: inline-block;
 }

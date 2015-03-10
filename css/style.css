@@ -162,8 +162,10 @@ h1, h2, h3, h4, h5 {
 /** DEFAULTS */
 
 html {
-	background-size:         cover;
+	background-size: cover;
 	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 
 html.main-bg {
