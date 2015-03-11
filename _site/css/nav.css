@@ -18,7 +18,7 @@ header {
 }
 
 /* Desktop */
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 40em) {
   .logo {
     float: left;
   }
@@ -38,7 +38,7 @@ header {
 }
 
 /* Desktop */
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 40em) {
   .nav-collapse ul {
     float: right;
     padding: 0;
@@ -60,7 +60,7 @@ header {
 }
 
 /* Desktop */
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 40em) {
   .nav-collapse li {
     display: inline-block;
     width: auto;
@@ -79,7 +79,7 @@ header {
 }
 
 /* Desktop */
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 40em) {
   .nav-collapse a {
     display: block;
     padding: 0 24px 0 24px;
