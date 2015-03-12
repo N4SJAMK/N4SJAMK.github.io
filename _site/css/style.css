@@ -33,17 +33,6 @@ h1, h2, h3, h4, h5 {
 
 /* HEADER */
 
-/*.logo {
-	min-height: 50px;
-	min-width: 50px;
-	max-height: 100px;
-	max-width: 100px;
-	display: inline-block;
-	margin-top: 15px;
-	padding-left: 10px;
-	float: left;
-}*/
-
 .transparent {
 	background: transparent;
 }
@@ -53,48 +42,6 @@ h1, h2, h3, h4, h5 {
 .collapse {
 	color: transparent;
 }
-/*.nav {
-	background-color: #221a26;
-	height: 80px;
-	position: fixed;
-	width: 100%;
-	z-index: 5;
-	padding-bottom: 0;
-}
-.nav ul {
-	list-style: none;
-	padding: 0px;
-	margin: 0px;
-	padding-right: 20px;
-	font-weight: bold;
-	display: inline-block;
-	float: right;
-	margin-top: 25px;
-}
-
-.nav ul li {
-	display: inline-block;
-}
-.nav ul li:hover {
-	border-radius: 5px 5px 0px 0px;
-}
-#logo-li {
-	text-align: left;
-	display: inline-block;
-}
-.nav ul li a {
-	display: block;
-	padding: 10px 20px;
-	text-decoration: none;
-	color: #CCCCCC;
-	font-weight: lighter;
-	font-size: 12px;
-	z-index: 050;
-}
-.nav ul li a:hover {
-	color: #F75423;
-	font-weight:200;
-}*/
 
 /* CHALLENCING VISIONS -PART */
 
@@ -156,9 +103,6 @@ h1, h2, h3, h4, h5 {
 	height: auto;
 }
 
-/* AGILE BY NATURE */
-
-
 /** DEFAULTS */
 
 html {
@@ -168,9 +112,29 @@ html {
 	-o-background-size: cover;
 }
 
-html.main-bg {
-	background: url('../img/n4sjamk_homepage_image.jpg') no-repeat center center fixed;
+.main-bg {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	min-width: 200%;
+	min-height: 200%;
+	z-index: -10;
 }
+
+.main-bg img {
+ 	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+}
+
+/*html.main-bg {
+	background: url('../img/n4sjamk_homepage_image.jpg') no-repeat center center fixed;
+}*/
 
 html.challenge-bg {
 	background: url('../img/challenge_factory.jpg') no-repeat center center fixed;
@@ -225,7 +189,7 @@ html.challenge-bg {
 /** MEET THE PROJECT */
 
 #meet-the-project {
-	height:           680px;
+	height:           600px;
 	background-color: #FFF;
 
 	position: relative;
@@ -236,7 +200,7 @@ html.challenge-bg {
 }
 
 #meet-the-project .background {
-	height: 680px;
+	height: 600px;
 	width: 35%;
 
 	background:      url('../img/about_picture.png');
@@ -286,7 +250,6 @@ html.challenge-bg {
 
 /** AGILE MANIFEST */
 
-/*#agile-by-nature {*/
 #meet-the-team {
 	background: transparent;
 }
@@ -407,6 +370,10 @@ html.challenge-bg {
 	font-size: 38px;
 }
 
+#build-experiences .info .motto-content {
+	font-style: italic;
+}
+
 #build-experiences .info .text {
 	width:  80%;
 	margin: 0 auto;
@@ -419,7 +386,6 @@ html.challenge-bg {
 	padding-right:  32px;
 	padding-bottom: 16px;
 
-	width:  80%;
 	margin: 0 auto;
 }
 
@@ -427,6 +393,14 @@ html.challenge-bg {
 	color:         #F75423;
 	font-size:     32px;
 	margin-bottom: 8px;
+}
+
+#build-experiences .experience-links {
+	margin-top: 8px;
+}
+
+#build-experiences .experience-links a:hover {
+	color: #F75423;
 }
 
 /** SUPPORTED BY */
@@ -575,24 +549,6 @@ html.challenge-bg {
 /* MEDIA QUERIES */
 
 @media (max-width: 640px) {
-	/*.logo {
-		display: none;
-	}
-	.nav {
-		height: 60px;
-	}
-	.nav ul {
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 0px;
-		margin-top: 20px;
-		float: left;
-	}
-	.nav ul li a {
-		padding: 0px 5px;
-		font-size: 10px;
-	}*/
-
 	.top {
 		padding-top: 100px;
 		height: 320px;
