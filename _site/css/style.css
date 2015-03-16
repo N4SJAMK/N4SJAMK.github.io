@@ -213,16 +213,28 @@ html {
 	position: absolute; top: 0; left: 65%;
 }
 
+#meet-the-project .content-left {
+	margin-right: 35%;
+}
+
 @media (max-width: 980px) {
 	#meet-the-project .background {
 		left:  75%;
 		width: 25%;
+	}
+
+	#meet-the-project .content-left {
+		margin-right: 25%;
 	}
 }
 
 @media (max-width: 640px) {
 	#meet-the-project .background {
 		display: none;
+	}
+
+	#meet-the-project .content-left {
+		margin-right: 0;
 	}
 }
 
@@ -322,6 +334,12 @@ html {
 	margin-bottom: 8px;
 }
 
+.face-card-title-sm {
+	color: #CCCCCC;
+	padding: 8px 0 8px 0;
+	text-align: center;
+}
+
 /** BUILD EXPERIENCES */
 
 #build-experiences {
@@ -353,36 +371,18 @@ html {
 	}
 }
 
-#build-experiences .info .content {
-	padding-left:  32px;
-	padding-right: 32px;
-}
-
 #build-experiences .info .motto {
-	width:         80%;
-	margin:        0 auto;
-	margin-bottom: 16px;
-
+	margin-bottom: 32px;
 	font-size: 38px;
+	text-align: center;
 }
 
 #build-experiences .info .motto-content {
 	font-style: italic;
 }
 
-#build-experiences .info .text {
-	width:  80%;
-	margin: 0 auto;
-}
-
-#build-experiences .experiences .content {
+#build-experiences .experiences {
 	font-family: 'Source Sans Pro', sans-serif;
-
-	padding-left:   32px;
-	padding-right:  32px;
-	padding-bottom: 16px;
-
-	margin: 0 auto;
 }
 
 #build-experiences .experience-title {
@@ -393,6 +393,7 @@ html {
 
 #build-experiences .experience-links {
 	margin-top: 8px;
+	margin-bottom: 12px;
 }
 
 #build-experiences .experience-links a:hover {
@@ -464,6 +465,7 @@ html {
 	height: 110px;
 	text-align: center;
 }
+
 .partners {
 	padding-top: 10px;
 	padding-bottom: 30px;
@@ -477,7 +479,6 @@ html {
 	font-size: 26px;
 	color: white;
 	padding: 100px 0;
-	magin: auto 60px;
 	border-bottom: 1px solid white;
 }
 .ourvision-text {
@@ -594,7 +595,6 @@ html {
 	.company-logos {
 		margin: 0 auto;
 		width: 50%;
-		height: 50%;
 	}
 	.vision {
 		padding-top: 40px;

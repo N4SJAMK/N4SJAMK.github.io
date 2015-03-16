@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive-nav.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/accordion.css" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
@@ -23,9 +24,36 @@
 
     responsiveNav('.nav-collapse');
 
+    // $('.accordion').initAccordion();
+
     // Add navbar height to scrolling
     smoothScroll.init({
       offset: 82
+    });
+
+    function closeAccordionSection() {
+      $('.accordion .accordion-section-title').removeClass('active');
+      $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+
+    $('.accordion-section-title').click(function(e) {
+      // Grab current anchor value
+      var currentAttrValue = $(this).attr('href');
+
+      if($(e.target).is('.active')) {
+        closeAccordionSection();
+      }
+      else {
+        closeAccordionSection();
+
+        // Add active class to section title
+        $(this).addClass('active');
+
+        // Open up the hidden content panel
+        $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+      }
+
+      e.preventDefault();
     });
 
     // basic hover effects
@@ -104,11 +132,13 @@
   <div id="meet-the-project">
     <div class="zerogrid">
       <div class="row">
-        <div class="col-1-2">
-          <div class="wrap-col">
-            <p class="motto">Get up, speed up!</p>
-            <p class="text">We are a group of experts working for simple target: Speeding up your development! Our main target is to research, develop, and invent solutions in collaboration with Digile N4S-Program partners.</p>
-            <a class="button" href="http://www.n4s.fi/en/">More About N4S</a>
+        <div class="content-left">
+          <div class="col-full">
+            <div class="wrap-col">
+              <p class="motto">Get up, speed up!</p>
+              <p class="text">We are a group of experts working for simple target: Speeding up your development! Our main target is to research, develop, and invent solutions in collaboration with Digile N4S-Program partners.</p>
+              <a class="button" href="http://www.n4s.fi/en/">More About N4S</a>
+            </div>
           </div>
         </div>
       </div>
@@ -134,67 +164,105 @@
 
       <!-- SMALLER DEVICES -->
       <div class="row display-small">
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_heli.jpg"
-              alt="Heli Sutinen" class="face" />
+        <div class="accordion">
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_1">Heli Sutinen</a>
+            <div id="member_1" class="accordion-section-content">
+              <img src="img/faces/team_heli.jpg" alt="Heli Sutinen" class="face" />
+              <div class="face-card-title-sm">Graphic Design</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_henri.jpg"
-              alt="Henri Tervakoski" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_2">Henri Tervakoski</a>
+            <div id="member_2" class="accordion-section-content">
+              <img src="img/faces/team_henri.jpg" alt="Henri Tervakoski" class="face" />
+              <div class="face-card-title-sm">Cloud infra, automation</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_janne.jpg"
-              alt="Janne Alatalo" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_3">Janne Alatalo</a>
+            <div id="member_3" class="accordion-section-content">
+              <img src="img/faces/team_janne.jpg" alt="Janne Alatalo" class="face" />
+              <div class="face-card-title-sm">TDD, automation</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_jarmo.jpg"
-              alt="Jarmo Viinikanoja" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_4">Jarmo Viinikanoja</a>
+            <div id="member_4" class="accordion-section-content">
+              <img src="img/faces/team_jarmo.jpg" alt="Jarmo Viinikanoja" class="face" />
+              <div class="face-card-title-sm">Network Specialist</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_petri.jpg"
-              alt="Petri Matilainen" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_5">Petri Matilainen</a>
+            <div id="member_5" class="accordion-section-content">
+              <img src="img/faces/team_petri.jpg" alt="Petri Matilainen" class="face" />
+              <div class="face-card-title-sm">Test automation</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_taneli.jpg"
-              alt="Taneli Hartikainen" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_6">Taneli Hartikainen</a>
+            <div id="member_6" class="accordion-section-content">
+              <img src="img/faces/team_taneli.jpg" alt="Taneli Hartikainen" class="face" />
+              <div class="face-card-title-sm">TDD, web development</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_marko.jpg"
-              alt="Marko Rintamäki" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_7">Marko Rintamäki</a>
+            <div id="member_7" class="accordion-section-content">
+              <img src="img/faces/team_marko.jpg" alt="Marko Rintamäki" class="face" />
+              <div class="face-card-title-sm">Product owner</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_jouni.jpg"
-              alt="Jouni Huotari" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_8">Jouni Huotari</a>
+            <div id="member_8" class="accordion-section-content">
+              <img src="img/faces/team_jouni.jpg" alt="Jouni Huotari" class="face" />
+              <div class="face-card-title-sm">Project manager</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_niko.jpg"
-              alt="Niko Korhonen" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_9">Niko Korhonen</a>
+            <div id="member_9" class="accordion-section-content">
+              <img src="img/faces/team_niko.jpg" alt="Niko Korhonen" class="face" />
+              <div class="face-card-title-sm">Test automation specialist</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_paavo.jpg"
-              alt="Paavo Nelimarkka" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_10">Paavo Nelimarkka</a>
+            <div id="member_10" class="accordion-section-content">
+              <img src="img/faces/team_paavo.jpg" alt="Paavo Nelimarkka" class="face" />
+              <div class="face-card-title-sm">Product Owner</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_tero.jpg"
-              alt="Tero Oinonen" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_11">Tero Oinonen</a>
+            <div id="member_11" class="accordion-section-content">
+              <img src="img/faces/team_tero.jpg" alt="Tero Oinonen" class="face" />
+              <div class="face-card-title-sm">Cloud infra, automation</div>
+            </div>
           </div>
-        
-          <div class="col-1-6 face-container">
-            <img src="img/faces/team_teemu.jpg"
-              alt="Teemu Laukka" class="face" />
+          
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_12">Teemu Laukka</a>
+            <div id="member_12" class="accordion-section-content">
+              <img src="img/faces/team_teemu.jpg" alt="Teemu Laukka" class="face" />
+              <div class="face-card-title-sm">TDD, Unity</div>
+            </div>
           </div>
-        
+          
+        </div>
       </div>
 
       <!-- BIGGER DEVICES -->
@@ -400,7 +468,7 @@
     <div class="zerogrid">
       <div class="row">
         <div class="col-1-3 info">
-          <div class="content">
+          <div class="wrap-col">
             <p class="motto">We build experiences</p>
             <p class="text motto-content">Yes, we build products and experiences. Here is collection of works done with N4S@JAMK and Challenge Factory 2014 teams during the N4S-Program.</p>
           </div>
@@ -409,7 +477,7 @@
           <div class="row experiences">
             
               <div class="col-1-2">
-                <div class="content">
+                <div class="wrap-col">
                   <div class="experience-title">Contriboard</div>
                   <div class="experience-content">
                     Contriboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate.
@@ -429,7 +497,7 @@
               </div>
             
               <div class="col-1-2">
-                <div class="content">
+                <div class="wrap-col">
                   <div class="experience-title">TOAS Debian Packaging</div>
                   <div class="experience-content">
                     The repository enables open source community to install and deploy Tieto Open Application Suite for Ubuntu Linux.
@@ -445,7 +513,7 @@
               </div>
             
               <div class="col-1-2">
-                <div class="content">
+                <div class="wrap-col">
                   <div class="experience-title">Unity Mocks</div>
                   <div class="experience-content">
                     Simulation of prototypes in a natural environment using Unity3D as the rendering engine.
@@ -482,17 +550,17 @@
     <div class="zerogrid row partners" id="black">
       <div class="col-1-3 logo-container" id="digile">
         <div class="wrap-col">
-          <a href="http://www.n4s.fi/en/"><img src="../img/digile-n4s.png" alt="logo1" class="company-logos" /></a>
+          <a href="http://www.n4s.fi/en/"><img src="../img/digile-n4s.png" alt="Digile" class="company-logos" /></a>
         </div>
       </div>
       <div class="col-1-3 logo-container">
         <div class="wrap-col">
-          <a href="http://www.tekes.fi/en/"><img src="../img/tekes_logo.png" alt="logo1" class="company-logos" /></a>
+          <a href="http://www.tekes.fi/en/"><img src="../img/tekes_logo.png" alt="Tekes" class="company-logos" /></a>
         </div>
       </div>
       <div class="col-1-3 logo-container">
         <div class="wrap-col">
-          <a href="http://www.jamk.fi/en/Home/"><img src="../img/jamk_logo.png" alt="logo" class="company-logos" /></a>
+          <a href="http://www.jamk.fi/en/Home/"><img src="../img/jamk_logo.png" alt="Jamk" class="company-logos" /></a>
         </div>
       </div>
     </div>

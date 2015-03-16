@@ -13,6 +13,7 @@ title: index page
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive-nav.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/accordion.css" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
@@ -27,9 +28,36 @@ title: index page
 
     responsiveNav('.nav-collapse');
 
+    // $('.accordion').initAccordion();
+
     // Add navbar height to scrolling
     smoothScroll.init({
       offset: 82
+    });
+
+    function closeAccordionSection() {
+      $('.accordion .accordion-section-title').removeClass('active');
+      $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+
+    $('.accordion-section-title').click(function(e) {
+      // Grab current anchor value
+      var currentAttrValue = $(this).attr('href');
+
+      if($(e.target).is('.active')) {
+        closeAccordionSection();
+      }
+      else {
+        closeAccordionSection();
+
+        // Add active class to section title
+        $(this).addClass('active');
+
+        // Open up the hidden content panel
+        $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+      }
+
+      e.preventDefault();
     });
 
     // basic hover effects
@@ -108,11 +136,13 @@ title: index page
   <div id="meet-the-project">
     <div class="zerogrid">
       <div class="row">
-        <div class="col-1-2">
-          <div class="wrap-col">
-            <p class="motto">{{site.data.meet_the_project.title}}</p>
-            <p class="text">{{site.data.meet_the_project.content}}</p>
-            <a class="button" href="http://www.n4s.fi/en/">More About N4S</a>
+        <div class="content-left">
+          <div class="col-full">
+            <div class="wrap-col">
+              <p class="motto">{{site.data.meet_the_project.title}}</p>
+              <p class="text">{{site.data.meet_the_project.content}}</p>
+              <a class="button" href="http://www.n4s.fi/en/">More About N4S</a>
+            </div>
           </div>
         </div>
       </div>
@@ -138,12 +168,17 @@ title: index page
 
       <!-- SMALLER DEVICES -->
       <div class="row display-small">
-        {% for member in site.data.members %}
-          <div class="col-1-6 face-container">
-            <img src="img/faces/{{member.image}}"
-              alt="{{member.full_name}}" class="face" />
+        <div class="accordion">
+          {% for member in site.data.members %}
+          <div class="accordion-section">
+            <a class="accordion-section-title" href="#member_{{forloop.index}}">{{member.full_name}}</a>
+            <div id="member_{{forloop.index}}" class="accordion-section-content">
+              <img src="img/faces/{{member.image}}" alt="{{member.full_name}}" class="face" />
+              <div class="face-card-title-sm">{{member.title}}</div>
+            </div>
           </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
 
       <!-- BIGGER DEVICES -->
@@ -173,7 +208,7 @@ title: index page
     <div class="zerogrid">
       <div class="row">
         <div class="col-1-3 info">
-          <div class="content">
+          <div class="wrap-col">
             <p class="motto">{{site.data.motto.title}}</p>
             <p class="text motto-content">{{site.data.motto.content}}</p>
           </div>
@@ -182,7 +217,7 @@ title: index page
           <div class="row experiences">
             {% for experience in site.data.experiences %}
               <div class="col-1-2">
-                <div class="content">
+                <div class="wrap-col">
                   <div class="experience-title">{{experience.title}}</div>
                   <div class="experience-content">
                     {{experience.description}}
@@ -219,17 +254,17 @@ title: index page
     <div class="zerogrid row partners" id="black">
       <div class="col-1-3 logo-container" id="digile">
         <div class="wrap-col">
-          <a href="http://www.n4s.fi/en/"><img src="../img/digile-n4s.png" alt="logo1" class="company-logos" /></a>
+          <a href="http://www.n4s.fi/en/"><img src="../img/digile-n4s.png" alt="Digile" class="company-logos" /></a>
         </div>
       </div>
       <div class="col-1-3 logo-container">
         <div class="wrap-col">
-          <a href="http://www.tekes.fi/en/"><img src="../img/tekes_logo.png" alt="logo1" class="company-logos" /></a>
+          <a href="http://www.tekes.fi/en/"><img src="../img/tekes_logo.png" alt="Tekes" class="company-logos" /></a>
         </div>
       </div>
       <div class="col-1-3 logo-container">
         <div class="wrap-col">
-          <a href="http://www.jamk.fi/en/Home/"><img src="../img/jamk_logo.png" alt="logo" class="company-logos" /></a>
+          <a href="http://www.jamk.fi/en/Home/"><img src="../img/jamk_logo.png" alt="Jamk" class="company-logos" /></a>
         </div>
       </div>
     </div>

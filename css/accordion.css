@@ -1,0 +1,37 @@
+.accordion, .accordion * {
+	font-family: 'Source Sans Pro', sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.accordion {
+	overflow: hidden;
+	background-color: transparent;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+	width: 100%;
+	padding: 15px;
+	display: inline-block;
+	background-color: transparent;
+	font-size: 18px;
+	text-decoration: none;
+	color: #CCCCCC;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+	color: #F75423;
+	background-color: transparent;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom: none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	padding: 15px;
+	display: none;
+}
