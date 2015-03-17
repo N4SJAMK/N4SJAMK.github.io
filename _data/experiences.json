@@ -1,5 +1,20 @@
 [
 	{
+		"title":       "Reference Production Environment",
+		"description": "For efficient teamwork and development we use and improve a toolchain of several software components. Our working methods are inspired by DevOps and LEAN practices.",
+		"links": [
+		{
+			"name": "About environment",
+			"href": "https://github.com/N4SJAMK/teamboard-meta/wiki/about-production-environment"
+		},
+		{
+			"name": "N4S Magazine Article",
+			"href": "http://www.n4s.fi/2014magazine/article9/"
+		}
+	]
+
+	},
+	{
 		"title":       "Contriboard",
 		"description": "Contriboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate.",
 		"links": [
