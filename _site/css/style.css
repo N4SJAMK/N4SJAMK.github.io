@@ -1,3 +1,10 @@
+html {
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -17,33 +24,11 @@ h1, h2, h3, h4, h5 {
 	padding: 0;
 }
 
-.link-button {
-	padding: 8px 20px;
-	border: 3px solid #221a26;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	background-color: white;
-	font-family: Arial, sans-serif;
-	text-decoration: none;
-	color: #221a26;
-	font-size: 14px;
-	font-weight: bold;
-}
-
-/* HEADER */
-
 .transparent {
 	background: transparent;
 }
-.collapse-button {
-	display: none;
-}
-.collapse {
-	color: transparent;
-}
 
-/* CHALLENCING VISIONS -PART */
+/* CHALLENGING VISIONS -PART */
 
 .top {
 	padding-top: 200px;
@@ -61,56 +46,7 @@ h1, h2, h3, h4, h5 {
 	left: calc(50% - 20px);
 }
 
-/* PROJECT */
-
-.project {
-	padding-top: 10px;
-	padding-bottom: 30px;
-}
-.project-area {
-	background-color: white;
-	width: auto;
-	height: auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 0;
-}
-.whitebg {
-	background-color: white;
-}
-.project-area {
-	width: auto;
-	height: auto;
-	padding: 20px;
-}
-
-.orangetext {
-	color: orange;
-	font-size: 36px;
-	font-family: "Open Sans", sans-serif;
-	margin-top: 50px;
-	margin-bottom: 80px;
-	padding-right: 30px;
-}
-
-.context {
-	font-family: 'Source Sans Pro', sans-serif;
-	padding-bottom: 30px;
-	margin-top: 50px;
-}
-.projectwrapper {
-	background-color: white;
-	height: auto;
-}
-
 /** DEFAULTS */
-
-html {
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-}
 
 .section-heading {
 	font-family: 'Open Sans', sans-serif;
@@ -155,12 +91,6 @@ html {
 .background {
 	background:          #FFF;
 	background-position: center;
-}
-
-.content {
-	padding-left:   64px;
-	padding-top:    32px;
-	padding-bottom: 64px;
 }
 
 .motto {
@@ -247,23 +177,10 @@ html {
 	margin-bottom: 48px;
 }
 
-#meet-the-project img {
-	display: block;
-
-	width:     100%;
-	max-width: 100%;
-
-	height: auto;
-}
-
 /** AGILE MANIFEST */
 
 #meet-the-team {
 	background: transparent;
-}
-
-#meet-the-team .motto {
-	color: white;
 }
 
 /** MEET THE TEAM */
@@ -357,11 +274,6 @@ html {
 		width: 100%;
 	}
 
-	#build-experiences .info .content {
-		padding-bottom: 16px;
-		text-align: center;
-	}
-
 	#build-experiences .info .text {
 		display: none;
 	}
@@ -400,61 +312,14 @@ html {
 	color: #F75423;
 }
 
-/** SUPPORTED BY */
-
-#supported-by .motto {
-	color: #FFF;
-}
-
 /** MEET THE PARTNERS */
 
 #meet-the-partners {
 	background-color: #FFF;
 }
 
-/* TEAM */
-
-.success-wrapper {
-	padding-bottom: 30px;
-}
-.success-title {
-	font-size: 38px;
-	font-family: "Open Sans", sans-serif;
-	border-top: 5px solid orange;
-	padding-top: 15px;
-}
-.success-text {
-	padding-top: 50px;
-}
-
-.textareas {
-	width: auto;
-}
-.textareas h2 {
-	padding-top: 0;
-	margin-top: 0;
-	color: orange;
-	font-size: 24px;
-}
-.textareas p {
-	font-size: 16px;
-	font-style: normal;
-	padding-right: 30px;
-}
-.text-area-wrapper {
-	padding-bottom: 20px;
-}
-
 /* OUR PARTNERS */
 
-.text-partners {
-	margin-top: 100px;
-	margin-bottom: 90px;
-	color: white;
-	font-size: 56px;
-	padding-top: 15px;
-	width: 330px;
-}
 .company-logos {
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -555,43 +420,6 @@ html {
 		font-size: 32px;
 	}
 
-	.project {
-		padding-top: 20px;
-		padding-bottom: 30px;
-	}
-	.orangetext {
-		font-size: 26px;
-		padding-right: 0;
-		margin-top: 10px;
-		margin-bottom: 0px;
-	}
-	.context {
-		margin-top: 10px;
-	}
-
-	.text-agile {
-		font-size: 32px;
-		margin-top: 50px;
-		margin-bottom: 40px;
-		width: 160px;
-	}
-
-	.success-wrapper {
-		padding-bottom: 10px;
-	}
-	.success-title {
-		font-size: 32px;
-	}
-	.success-text {
-		padding-top: 0px;
-	}
-
-	.text-partners {
-		font-size: 32px;
-		margin-top: 40px;
-		margin-bottom: 40px;
-		padding-top: 5px;
-	}
 	.company-logos {
 		margin: 0 auto;
 		width: 50%;
@@ -603,10 +431,6 @@ html {
 	.ourvision-text {
 		font-size: 18px;
 		line-height: 26px;
-	}
-
-	.googlemap {
-		display: none !important;
 	}
 }
 
