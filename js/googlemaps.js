@@ -1,8 +1,4 @@
 $(window).load(function() {
-    if($.browser.safari) {
-   alert("Käytät näköjään Safaria! Vaihdappa selainta niin toimii paremmin.");
-}
-
     initialize();
 
     function initialize() {
