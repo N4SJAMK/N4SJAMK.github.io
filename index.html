@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="icon" type="image/png" href="img/pyora.png" alt="pyörä">
+  <title>N4S@JAMK | Home </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="css/zerogrid.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive-nav.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/accordion.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/jquery.tap.js"></script>
+   <script type="text/javascript" src="js/googlemaps.js"></script>
+  <script type="text/javascript" src="js/on-scroll.js"></script>
+  <script type="text/javascript" src="js/on-hover.js"></script>
+ 
+  <script type="text/javascript" src="js/responsive-nav.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA76moW71nzaqY1C3Xv4T42G3BKzU5k0f0"></script>
+    
+  <script>
+    $(window).load(function() {
+
+      responsiveNav('.nav-collapse');
+
+      // Keep copyright up to date
+      var currentYear = new Date().getFullYear();
+      var copyrightText = '©N4S@JAMK ' + currentYear + '. All rights reserved.';
+      $('#copyright').text(copyrightText);
+    });
+    
+  </script>
+</head>
+
+<body>
+  <div class="main-bg">
+    <video class="taustavideo" autoplay loop>
+      <source src="img/panorama.mp4" type="video/mp4" >
+    </video>
+  </div>
+  <div class="wrapper" id="top">
+    <header>
+      <a href="index.html"><div class="logo"></div></a>
+      <nav class="nav-collapse">
+        <ul id="nav-left">
+          <li><a href="#meet-the-project">ABOUT</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#meet-the-team">TEAM</a></li>
+          <li><a href="#supported-by">PARTNERS</a></li>
+          <li><a href="#contact-info">CONTACT</a></li>
+        </ul>
+        <ul class="nav-right">
+          <li>
+            <a class="cflink">CHALLENGE FACTORY &#9662;</a>
+            <ul>
+              <li><a href="challenge-factory.html">CF Home</a></li>
+              <li><a href="challenge-factory-2015.html">2015</a></li>
+              <li><a href="challenge-factory-2014.html">2014</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="zerogrid row transparent top">
+      <div class="col-full">
+        <div class="wrap-col">
+          <div class="slideUp">
+            <div class="big-text">Creating agile solutions together.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Meet the project -->
+  <div id="meet-the-project">
+    <div class="zerogrid">
+      <div class="row">
+        <div class="col-1-2 n4sdesc">
+          <div class="motto">Get up, speed up!</div>
+          <p class="text">We are a group of experts working for simple target: Speeding up your development! Our main target is to research, develop, and invent solutions in collaboration with Digile N4S-Program partners.</p>
+          <a class="button" href="http://www.n4s.fi/en/">More About N4S</a>
+        </div>
+
+        <div class="col-1-2 n4simage">
+
+          <img class="n4slogo" src="img/n4slogo.png" alt="n4slogo">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- WORKS -->
+    <div id="works">
+      <div class="zerogrid">
+        <div class="row">
+          <div class="col-full">
+            <div class="wrap-col">
+              <div class="section-heading">Works</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="build-experiences">
+        <div class="zerogrid">
+
+
+          <div class="row experiences">
+            <div class="col-full info">
+              <div class="wrap-col">
+                <div class="slideup-text">
+                  <p class="challenge-title">We build experiences</p>
+                  <p class="experience-content">Yes, we build products and experiences. Here is collection of works done with N4S@JAMK and Challenge Factory teams during the N4S-Program.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row products">
+            <div class="col-1-2 works-mobile">
+              <div class="wrap-col">
+                <a href="http://www.n4s.fi/2014magazine/article9/" target="_blank" class="corolla-image"></a>
+                <div class="slideup-text">
+                  <div class="experience-title">Reference Production Environment</div>
+                  <div class="experience-content">
+                    For efficient teamwork and development we use and improve a toolchain of several software components. Our working methods are inspired by DevOps and LEAN practices.
+                  </div>
+                  <div class="experience-links">
+
+                    <div class="experience-link">
+                      <a href="https://github.com/N4SJAMK/teamboard-meta/wiki/about-production-environment">About environment</a>
+                    </div>
+
+                    <div class="experience-link">
+                      <a href="http://www.n4s.fi/2014magazine/article9/">N4S Magazine Article</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1-2 works-mobile">
+              <div class="wrap-col">
+                <a href="http://n4sjamk.github.io/contriboard/" target="_blank" class="board-image"></a>
+                <div class="slideup-text">
+                  <div class="experience-title">Contriboard</div>
+                  <div class="experience-content">
+                    Contriboard is an open source realtime collaboration tool for teams. It targets primarily tablet and desktop users to enable all team members to participate.
+                  </div>
+                  <div class="experience-links">
+
+                    <div class="experience-link">
+                      <a href="http://n4sjamk.github.io/contriboard/" target="_blank">Contriboard</a>
+                    </div>
+
+                    <div class="experience-link">
+                      <a href="http://github.com/N4SJAMK/teamboard-meta/wiki" target="_blank">Contriboard @ Github</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+<!-- Meet the team -->
+  <div id="meet-the-team">
+    <div class="zerogrid">
+      <div class="row">
+        <div class="col-full">
+          <div class="wrap-col">
+            <div class="section-heading">Meet our team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="photos">
+      <!-- Photos -->
+      <div class="zerogrid faces-row">
+        <div class="row">
+          <!-- Face -->
+          
+          <div class="col-1-5 faces slideup-text">
+            <div class="face-card">
+              <!-- Pic -->
+              <img src="img/faces/heli.JPG" alt="Heli Sutinen" class="face" />
+              <!-- Content -->
+              <div class="face-details">
+                <div class="face-info">Heli Sutinen</div>
+                <div class="job">Graphic Design</div>
+              </div>
+            </div>
+            <a href="https://twitter.com/heli_hjs" target="_blank">
+            <i class="fa fa-twitter-square fa-2x"></i>
+            <a href="https://www.linkedin.com/pub/heli-sutinen/a0/502/115" target="_blank">
+            <i class="fa fa-linkedin-square fa-2x"></i>
+              </a>
+            
+          </div>
+          
+          
+
+          <div class="col-1-5 faces slideup-text">
+            <div class="face-card">
+              <!-- Pic -->
+              <img src="img/faces/janne.JPG" alt="Janne Alatalo" class="face" />
+              <!-- Content -->
+              <div class="face-details">
+                <div class="face-info">Janne Alatalo</div>
+                <div class="job">TDD, automation</div>
+              </div>
+            </div>
+             <div class="member_some">
+               </div>
+            
+          </div>
+
+          <div class="col-1-5 faces slideup-text">
+            <div class="face-card">
+              <!-- Pic -->
+              <img src="img/faces/team_jarmo.jpg" alt="Jarmo Viinikanoja" class="face" />
+              <!-- Content -->
+              <div class="face-details">
+                <div class="face-info">Jarmo Viinikanoja</div>
+                <div class="job">Network specialist</div>
+              </div>
+            </div>
+            
+             <div class="member_some">
+               </div>
+          </div>
+
+          
+
+          <div class="row">
+            <div class="col-1-5 faces slideup-text">
+              <div class="face-card">
+                <!-- Pic -->
+                <img src="img/faces/petri.JPG" alt="Petri Matilainen" class="face" />
+                <!-- Content -->
+                <div class="face-details">
+                  <div class="face-info">Petri Matilainen</div>
+                  <div class="job">Test automation</div>
+                </div>
+              </div>
+          
+             <div class="member_some">
+               </div>
+            </div>
+
+            <div class="col-1-5 faces slideup-text">
+              <div class="face-card">
+                <!-- Pic -->
+                <img src="img/faces/taneli.JPG" alt="Taneli Hartikainen" class="face" />
+                <!-- Content -->
+                <div class="face-details">
+                  <div class="face-info">Taneli Hartikainen</div>
+                  <div class="job">Talonmies</div>
+                </div>
+              </div>
+               <div class="member_some">
+            <a href="https://www.linkedin.com/pub/taneli-hartikainen/32/b83/712" target="_blank">
+            <i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+            </div>
+            </div>
+
+
+            <div class="col-1-5 faces slideup-text">
+              <div class="face-card">
+                <!-- Pic -->
+                <img src="img/faces/narsu.JPG" alt="Marko Rintamäki" class="face" />
+                <!-- Content -->
+                <div class="face-details">
+                  <div class="face-info">Marko Rintamäki</div>
+                  <div class="job">Team Coach<br>Product Owner</div>
+                </div>
+              </div>
+               <div class="member_some">
+              <a href=" https://twitter.com/narsuman" target="_blank">
+              <i class="fa fa-twitter-square fa-2x"></i>
+            <a href="https://www.linkedin.com/in/narsuman" target="_blank">
+            <i class="fa fa-linkedin-square fa-2x"></i>
+              </a>
+              </div>
+            </div>
+
+            <div class="col-1-5 faces slideup-text">
+              <div class="face-card">
+                <!-- Pic -->
+                <img src="img/faces/team_jouni.jpg" alt="Jouni Huotari" class="face" /> <!-- Content -->
+                <div class="face-details">
+                  <div class="face-info">Jouni Huotari</div>
+                  <div class="job">Project manager</div>
+                </div>
+              </div>
+             <div class="member_some">
+            </div>
+            </div>
+
+            <div class="col-1-5 faces slideup-text">
+              <div class="face-card">
+                <!-- Pic -->
+                <img src="img/faces/nikok.JPG" alt="Niko Korhonen" class="face" />
+                <!-- Content -->
+                <div class="face-details">
+                  <div class="face-info">Niko Korhonen</div>
+                  <div class="job">Test automation</div>
+                </div>
+              </div>
+               <div class="member_some">
+              <a href=" https://www.linkedin.com/profile/view?id=162900125" target="_blank">
+            <i class="fa fa-linkedin-square fa-2x"></i>
+              </a>
+              </div>
+            </div>
+          
+
+         
+            <div class="col-1-5 faces slideup-text">
+              <div class="face-card">
+                <!-- Pic -->
+                <img src="img/faces/team_paavo.jpg" alt="Paavo Nelimarkka" class="face" />
+                <!-- Content -->
+                <div class="face-details">
+                  <div class="face-info">Paavo Nelimarkka</div>
+                  <div class="job">Web developer</div>
+                </div>
+              </div>
+             <div class="member_some">
+               </div>
+            
+            </div>
+         
+         
+         <a href="challenge-factory-2015.html#photos" target="_blank">
+         <div class="col-1-5 faces slideup-text">
+              <div class="face-card">
+                <!-- Pic -->
+                <img src="img/faces/team.JPG" alt="Paavo Nelimarkka" class="face" />
+                <!-- Content -->
+                <div class="face-details">
+                  <div class="face-info">Challenge Factory team</div>
+                </div>
+              </div>
+              <div class="member_some">
+               </div>
+            </div>
+             
+            
+            
+            
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+    <div id="supported-by">
+      <div class="zerogrid">
+        <div class="row">
+          <div class="col-full">
+            <div class="wrap-col">
+              <div class="section-heading">Supported By</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="meet-the-partners">
+        <div class="zerogrid row partners" id="black">
+          <div class="col-1-3 logo-container" id="digile">
+            <div class="wrap-col">
+              <a href="http://www.n4s.fi/en/"><img src="img/digile-n4s.png" alt="Digile" class="company-logos" /></a>
+            </div>
+          </div>
+          <div class="col-1-3 logo-container">
+            <div class="wrap-col">
+              <a href="http://www.tekes.fi/en/"><img src="img/tekes_logo.png" alt="Tekes" class="company-logos" /></a>
+            </div>
+          </div>
+          <div class="col-1-3 logo-container">
+            <div class="wrap-col">
+              <a href="http://www.jamk.fi/en/Home/"><img src="img/jamk_logo.png" alt="Jamk" class="company-logos" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-info" class="contact-wrapper">
+      <div class="zerogrid row vision">
+        <div class="wrap-col">
+          <p class="ourvision-text">We are looking for talents all the time. If you have the urge to stay on top of the IT evolution, we would like to hear from you. And if you just want to come and say hello, we are in with that also. Let's improve the process of software delivery
+            together. We have coffee, you can bring some korvapuusti!</p>
+        </div>
+       </div>
+          
+          <div id="map-canvas">
+            </div>
+      
+<div class="contact-bg">
+      <div class="zerogrid row contact ">
+        <div class="col-1-3">
+          <div class="wrap-col">
+            <h3>Contact</h3>
+            <p>n4sjamk[at]gmail.com</p>
+            <p>40100 Jyväskylä</p>
+            <p>Finland</p>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="wrap-col">
+            <h3>Find us</h3>
+            <p>
+              <a href="http://twitter.com/n4sjamk" target="_blank"><i class="fa fa-twitter-square fa-3x twitter"></i></a>
+              <a href="http://github.com/N4SJAMK" target="_blank"><i class="fa fa-github-square fa-3x github"></i></a>
+              <a href="https://www.linkedin.com/grp/home?gid=6623114" target="_blank"><i class="fa fa-linkedin-square fa-3x linkedin"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer class="zerogrid row footer">
+        <div class="col-1-3">
+          <div class="wrap-col">
+            <p id="copyright"></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </div>
+</body>
+
+</html>
