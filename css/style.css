@@ -413,7 +413,6 @@ background-color:#221A26;
  
  .contact-wrapper {
   position:relative;
-  z-index:-1;
  }
  
  .contact {
@@ -646,13 +645,13 @@ background-color:#221A26;
  margin-bottom: 40px;
  background-position: center;
  background-repeat: no-repeat;
- width: 310px;
+ width: 100%;
  height: 205px;
  background-image: url('../img/board-image.jpg');
  transition: all 0.3s ease;
 }
 .board-image:hover {
- width: 310px;
+ width: 100%;
  height: 205px;
  background-image: url('../img/board-image-hover.jpg');
 }
@@ -662,13 +661,13 @@ background-color:#221A26;
  margin-bottom: 40px;
  background-position: center;
  background-repeat: no-repeat;
- width: 310px;
+ width:100%;
  height: 205px;
  background-image: url('../img/corollakuva.jpg');
  transition: all 0.3s ease;
 }
 .corolla-image:hover {
- width: 310px;
+ width: 100%;
  height: 205px;
  background-image: url('../img/corollakuva-hover.jpg');
 }
