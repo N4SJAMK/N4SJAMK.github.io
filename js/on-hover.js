@@ -18,6 +18,7 @@
      newWidth(width);
     });
     
+	//FACECARDS HOVER
    facecard.hover(onHover, outHover);
   
    function newWidth(width){ 
@@ -26,7 +27,7 @@
        if (width > 992){
         $('.face-details').removeClass('face-hover');
        }
-       
+     //open dropdown list in navbar on hover or on click  
      var navright = $('.nav-right'); 
      if (width > 992){
       navright.hover(navOnHover, navOutHover);
@@ -44,7 +45,7 @@
     function onHover(){ $(this).find('.face-details').addClass('face-hover') }
     function outHover(){ $(this).find('.face-details').removeClass('face-hover') }
     
-    
+    //Posters' grow effect on challenge factory 2014 page
      var poster = $('.poster'); 
       poster.click(function (event) {
        

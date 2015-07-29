@@ -98,17 +98,15 @@ $(window).load(function() {
 				marker.setAnimation(google.maps.Animation.DROP);
 			}
 		})
-	
-
 	});
-      
+      //center marker if screen size changes
         google.maps.event.addDomListener(window, "resize", function() {
  var center = map.getCenter();
  google.maps.event.trigger(map, "resize");
  map.setCenter(myLatlng); 
 });
        
-       
+       //bounce animation when mouse is over map
         google.maps.event.addListener(map, 'mouseover', function() {
         marker.setAnimation(google.maps.Animation.BOUNCE);
         });
@@ -117,11 +115,5 @@ $(window).load(function() {
         });
     }
     
-   
-  
-    google.maps.event.addDomListener(window, 'load', initialize);
-    
-    
-    
-    
+   google.maps.event.addDomListener(window, 'load', initialize); 
 });
