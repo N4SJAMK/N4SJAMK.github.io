@@ -719,34 +719,3 @@ a:link {
   width: 100% !important;
  }
 }
-
-/* TEAMBOARD PAGE */
-.tb-pic-wrapper {
- background-color: #141414;
- margin: 160px auto;
- width: 1500px;
-}
-
-.tb-pic {
- width: 1500px;
-}
-
-@media (max-width: 1510px) {
- .tb-pic-wrapper {
-  margin: 100px auto;
-  width: 960px;
- }
- .tb-pic {
-  width: 960px;
- }
-}
-
-@media (max-width: 960px) {
- .tb-pic-wrapper {
-  margin: 60px auto;
-  width: 640px;
- }
- .tb-pic {
-  width: 640px;
- }
-}
