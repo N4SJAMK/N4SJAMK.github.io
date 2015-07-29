@@ -1,4 +1,5 @@
 $(document).ready(function () {
+//ANIMATE ELEMENTS WHEN SCROLLED DIFFERENT POSITIONS
 
     $(document).on("scroll", onScroll);
     //smoothscroll
@@ -16,7 +17,7 @@ $(document).ready(function () {
         menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top-70
+            'scrollTop': $target.offset().top-70 //offset from screen top
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);

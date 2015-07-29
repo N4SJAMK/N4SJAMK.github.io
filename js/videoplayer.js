@@ -7,6 +7,7 @@
      video.pause();
      newWidth(width);
      
+	 //check orientation
      $(window).on("orientationchange",function(){
      videoarea.unbind('mouseenter mouseleave');
      });
@@ -30,7 +31,7 @@
       video.pause();
           }
      });
-
+		//pause video if click outside video
       $('html').click(function() {
       $('.videoSlate').css({ 'opacity': 0.6 });
       $('.fa-play').css({ 'opacity': 1, 'color':'#F75423' });
@@ -38,6 +39,7 @@
       video.pause();
       });
       
+	  //enable hover on big displays
      function newWidth(width){ 
       width = $(window).width();
      if (width > 992){
